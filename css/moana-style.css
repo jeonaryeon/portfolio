@@ -9,11 +9,14 @@
 
 /* -------------------------- 공통 -------------------------- */
 html,body{height: 100%; background-color: #0d294f;}
-section{width: 100%; height: 100%;}
+section{
+  overflow: hidden;
+  width: 100%; height: 100%;
+}
 
 .container{
   position: relative; 
-  width: 1440px;
+  width: 1440px; height: 100%;
   margin: 0 auto;
 }
 .ir{
@@ -25,48 +28,47 @@ section{width: 100%; height: 100%;}
 
 /* -------------------------- header -------------------------- */
 header{
-  position: fixed; left: 50%; top: 80px; z-index: 1000;
+  position: fixed; left: 50%; top: 4%; z-index: 1000;
   transform: translateX(-50%);
   width: 1440px;
   opacity: 0;
 }
-#gnb{
-  display: flex;
-  justify-content: space-around;
-}
-#gnb>li{
-  height: 40px;
-  margin-top: 4px;
-  background-image: url(../images/moana/font.png);
-  cursor: pointer;
-}
+  #gnb{
+    display: flex;
+    justify-content: space-around;
+  }
+  #gnb>li{
+    height: 40px;
+    margin-top: 4px;
+    background-image: url(../images/moana/font.png);
+    cursor: pointer;
+  }
 
-#gnb>.menu1{width: 150px;}
-#gnb>.menu2{width: 162px; background-position: -158px 0;}
-#gnb>.menu3{width: 244px; background-position: -328px 0;}
-#gnb>.menu4{width: 209px; background-position: -584px 0;}
-#gnb>.menu5{width: 271px; background-position: -801px 0;}
+  #gnb>.menu1{width: 150px;}
+  #gnb>.menu2{width: 162px; background-position: -158px 0;}
+  #gnb>.menu3{width: 244px; background-position: -328px 0;}
+  #gnb>.menu4{width: 209px; background-position: -584px 0;}
+  #gnb>.menu5{width: 271px; background-position: -801px 0;}
 
-#gnb>li:hover,#gnb>li.on{margin-top: 0;}
-#gnb>.menu1:hover,
-#gnb>.menu1.on{background-position: 0 -41px;}
+  #gnb>li:hover,#gnb>li.on{margin-top: 0;}
+  #gnb>.menu1:hover,
+  #gnb>.menu1.on{background-position: 0 -41px;}
 
-#gnb>.menu2:hover,
-#gnb>.menu2.on{background-position: -158px -41px;}
+  #gnb>.menu2:hover,
+  #gnb>.menu2.on{background-position: -158px -41px;}
 
-#gnb>.menu3:hover,
-#gnb>.menu3.on{background-position: -328px -41px;}
+  #gnb>.menu3:hover,
+  #gnb>.menu3.on{background-position: -328px -41px;}
 
-#gnb>.menu4:hover,
-#gnb>.menu4.on{background-position: -584px -41px;}
+  #gnb>.menu4:hover,
+  #gnb>.menu4.on{background-position: -584px -41px;}
 
-#gnb>.menu5:hover,
-#gnb>.menu5.on{background-position: -801px -41px;}
+  #gnb>.menu5:hover,
+  #gnb>.menu5.on{background-position: -801px -41px;}
 
 
 /* -------------------------- #intro -------------------------- */
 #intro{
-  overflow: hidden;
   position: relative;
   background-image: url(../images/moana/intro_bg.jpg);
   background-repeat: no-repeat;
@@ -105,7 +107,41 @@ header{
 
 
 /* -------------------------- #still-cut -------------------------- */
-#still-cut{}
+#still-cut{position: relative;}
+  #photo_b{
+    position: absolute; left: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+#photo_s{
+  overflow: hidden;
+  position: absolute; left: 260px; bottom: 2%;
+  width: 920px; height: 120px;
+}
+#photo_s>ul{
+  overflow: hidden;
+  position: absolute; left: 60px; top: 0;
+  width: 800px;
+}
+#photo_s>ul>li{
+  overflow: hidden;
+  float: left;
+  transform: scale(0.9);
+  width: 120px; height: 120px;
+  margin: 0 20px;
+  border-radius: 50%;
+}
+#photo_s>ul>li:hover,
+#photo_s>ul>li.on{transform: scale(1);}
+
+#photo_s>button{
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  width: 36px; height: 33px;
+  background-image: url(../images/moana/icon.png);
+}
+#photo_s>.left{left: 0; background-position: -34px -68px;}
+#photo_s>.right{right: 0; background-position: -71px -68px;}
 
 
 /* -------------------------- #production -------------------------- */

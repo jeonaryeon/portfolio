@@ -19,7 +19,7 @@ $(function(){
   
     // portfolio 이벤트 web
       function web(){
-        var title=$('#web .port>img').eq(num).attr('title');
+        var title=$('#web .port>img').eq(num).attr('alt');
         $('.num').text('0'+(num+1));
         $('#web .port>img').removeClass('on').eq(num).addClass('on');
         $('#web .port>figcaption').removeClass('on').eq(num).addClass('on');
@@ -55,7 +55,7 @@ $(function(){
 
     // portfolio 이벤트 design
       function design(){
-        var title=$('#design .port>img').eq(num).attr('title');
+        var title=$('#design .port>img').eq(num).attr('alt');
         $('.num').text('0'+(num+1));
         $('#design .port>img').removeClass('on').eq(num).addClass('on');
         $('#design .port>figcaption').removeClass('on').eq(num).addClass('on');
