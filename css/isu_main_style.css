@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* -------------------------- #banner -------------------------- */
+#banner{
+  overflow: hidden;
+  padding: 14% 0 10%;
+}
+#banner>.container{
+  bottom: -50px; z-index: 300;
+  opacity: 0;
+}
+#banner h2{width: 421px; margin: 0 auto;}
+#banner p{
+  margin: 30px 0 50px;
+  color: #fff;
+  text-align: center;
+}
+#banner ul{width: 900px; margin: 0 auto;}
+#banner ul>li{
+  float: left;
+  width: 33.333%;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.4);
+  border: 1px solid #fff; box-sizing: border-box;
+  transition: all 0.4s;
+}
+#banner ul>li:nth-child(2){border-left: 0; border-right: 0;}
+#banner ul>li>a{
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+}
+#banner ul>li>a>span{
+  display: block;
+  position: relative; top: 5px;
+  width: 24px; height: 24px;
+  margin: 0 auto;
+  background-position: -50px -49px;
+}
+#banner>.banner_bg{
+  overflow: hidden;
+  position: absolute; left: 0; top: 0; z-index: 200;
+  width: 100%;
+}
+#banner>.banner_bg>img{transform: scale(1.2); transition: all 8s;}
+
+/* .banner hover */
+#banner ul>li:hover{background-color: #99ca3b;}
+#banner ul>li:hover>a>span{top: 12px; background-position: -50px -30px;}
+
+
+/* -------------------------- #notice -------------------------- */
+#notice{background-color: #fff;}
+  .notice_cont{height: 800px;}
+  .notice_cont>article{
+    float: left;
+    position: relative;
+    width: 25%; height: 50%;
+  }
+  .notice_cont>article>h3{margin: 10% 0 0 10%;}
+  .notice_cont>article>p{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  .notice_cont>article>a{
+    position: absolute; left: 10%; bottom: 10%;
+    padding: 5px 10px;
+    border: 1px solid #777; border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .notice_cont>article>a>i{
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+
+#intro>h3,
+#direction>h3{color: #fff;}
+#intro>p,
+#direction>p{color: rgba(255,255,255,0.8);}
+#intro>a,
+#direction>a{color: rgba(255,255,255,0.8); border-color: rgba(255,255,255,0.8);}
+
+  /* hover */
+  .notice_cont>article>a:hover{
+    color: rgba(255,255,255,0.8);
+    background-color: #777;
+  }
+  #intro>a:hover,
+  #direction>a:hover{
+    color: #777; 
+    background-color: #fff;
+  }
+
+/* #notice_banner */
+#notice_banner{overflow: hidden; width: 50%;}
+  .video{height: 100%;}
+  .image{
+    display: none;
+    height: 100%;
+    text-indent: -9999px;
+    background-image: url(../images/isu/noticeBanner.jpg);
+    background-size: cover; background-position: center center;
+  }
+
+/* #intro */
+#intro{
+  background-color: #0090d6;
+  background-image: url(../images/isu/intro_bg.png);
+  background-size: cover;
+}
+
+/* #system */
+#system{border: 1px solid #ccc; box-sizing: border-box;}
+
+/* #person */
+#person{background-color: #ccc;}
+
+/* #news */
+#news{
+  width: 50%;
+  background-color: #eee;
+  background-image: url(../images/isu/news_bg.png);
+  background-size: cover;
+}
+#news>h3{
+  position: relative;
+  width: 90%;
+  margin: 35px auto 15px;
+  text-indent: 2%;
+}
+#news>h3>a{
+  position: absolute; right: 5%; bottom: 0; 
+  width: 16px; height: 16px;
+}
+#news>h3>a>span{background-position: -75px -28px;}
+#news>table{
+  width: 90%;
+  margin: 0 auto;
+}
+#news tr{
+  display: block;
+  width: 96%;
+  padding: 0 2%;
+  line-height: 50px;
+  border-top: 1px solid #aaa;
+}
+#news tr:first-child{border-top: 2px solid #777;}
+#news tr:last-child{border-bottom: 2px solid #777;}
+#news td{display: inline-block;}
+#news td:first-child{width: 10%;}
+#news th{
+  display: inline-block;
+  width: 70%;
+  font-weight: 500;
+  text-align: left;
+}
+#news td:last-child{
+  width: 18%; 
+  text-align: right;
+}
+
+/* #direction */
+#direction{background-color: #99ca3b;}
+
+
+/* -------------------------- #business -------------------------- */
+#business h2,
+#business p{color: #fff;}
+
+  .business_cont>.main{
+    float: left;
+    width: 32.3333%;
+    background-color: #fff;
+  }
+  .business_cont>.main:nth-child(2){margin: 0 1.5%;}
+  .business_cont figure{padding: 10px 10px 0; cursor: pointer;}
+  .business_cont figure>figcaption{
+    width: 80%; height: 115px;
+    margin: 30px auto;
+    line-height: 1.8;
+  }
+  .business_cont figcaption>strong{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+/* -------------------------- #apart -------------------------- */
+#apart{background-color: #fff;}
+#apart>div>div{float: left;}
+  .apart_left{width: 20%;}
+  .apart_left>h2,
+  .apart_left>p{text-align: justify;}
+  .apart_left>p{margin-bottom: 15px;}
+    .a_btn>button{
+      width: 25px; height: 25px;
+      margin-right: 5px;
+      color: #777;
+      border: 1px solid #ccc; border-radius: 50%;
+    }
+.a_btn>button.on{color: #0090d6; border-color: #0090d6;}
+
+  .apart_right{
+    overflow: hidden;
+    position: relative;
+    width: 75%; 
+    margin-left: 5%;
+  }
+  .apart_right>ul{position: relative; width: 200%;}
+  .apart_right>ul>li{
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    background-color: #555;
+  }
+  .apart_right figure{position: relative;}
+  .apart_right figcaption{
+    position: absolute; left: 0; bottom: 5%;
+    padding: 0 5%;
+    color: #fff;
+    text-align: left;
+  }
+  .apart_right figcaption>strong{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+/* -------------------------- .fixed_bg -------------------------- */
+.fixed_bg{
+  position: fixed; left: 0; top: 0; z-index: 100;
+  width: 100%; height: 100%;
+  text-indent: -9999px;
+  background-image: url(../images/isu/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+/* -------------------------- mediaQuery -------------------------- */
+/* 1280px ~ 1439px */
+@media screen and (max-width:1439px){
+  #banner{padding: 12% 0 8%;}
+} /* end of 1439px */
+
+
+/* 1025px ~ 1279px */
+@media screen and (max-width:1279px){
+  /* #banner */
+  #banner{padding: 13% 0 7%;}
+  #banner h2{width: 350px;}
+  #banner p{margin: 20px 0 30px;}
+  #banner ul{width: 750px;}
+  
+  /* #notice */
+  .notice_cont{height: 700px;}
+  #news>h3{margin-top: 40px;}
+  #news tr{line-height: 40px;}
+  
+  /* #business */
+  .business_cont figure>figcaption{height: 125px;}
+} /* end of 1279px */
+
+
+/* 961px ~ 1024px */
+@media screen and (max-width:1024px){
+  /* #banner */
+  #banner h2{width: 300px;}
+  #banner p{margin-bottom: 0;}
+  #banner ul{display: none;}
+  
+  /* #notice */
+  #notice{background-color: #eee;}
+  .notice_cont{height: 520px;}
+  .notice_cont>article{width: 25%; height: 50%;}
+  .notice_cont>article>p{}
+  #notice_banner{width: 50%; height: 100%;}
+    .video{display: none;}
+    .image{display: block;}
+  #news{display: none;}
+} /* end of 1024px */
+
+
+/* 769px ~ 960px */
+@media screen and (max-width:960px){
+  /* #notice */
+  .notice_cont{height: 900px;}
+  .notice_cont>article{width: 50%; height: 33.3333%;}
+  .notice_cont>.cont>a>p{width: 45%;}
+  #notice_banner{width: 100%; height: 33.3333%;}
+  
+  /* #business */
+  .business_cont figure>figcaption{height: 135px; margin: 20px auto;}
+  
+  /* #apart */
+  #apart>div>div{float: none;}
+    .apart_left{overflow: hidden; width: 100%;}
+    .apart_left>h2,
+    .apart_left>p{text-align: center;}
+      .a_btn{
+        position: relative; left: 50%; 
+        margin: 15px 0 25px -60px;
+      }
+    .apart_right{
+      width: 100%; 
+      margin-left: 0;
+    }
+} /* end of 960px */
+
+
+/* 601px ~ 768px */
+@media screen and (max-width:768px){
+  /* #banner */
+  #banner{padding: 15% 0 5%;}
+  #banner h2{width: 250px;}
+} /* end of 768px */
+
+
+/* 481px ~ 600px */
+@media screen and (max-width:600px){
+  /* #banner */
+  #banner{padding: 12% 0 3%;}
+  #banner h2{width: 160px;}
+  #banner p{margin-top: 15px;}
+  
+  /* #notice */
+  #notice{padding: 20px 0;}
+  .notice_cont{height: 600px;}
+  .notice_cont>article>p{margin-top: 5px;}
+  .notice_cont>article>a{bottom: 10%;}
+  
+  /* #business */
+  #business{padding: 50px 0;}
+    .business_cont>.main{float: none; width: 100%;}
+    .business_cont>.main:nth-child(2){margin: 10px 0;}
+    .business_cont figure{position: relative; padding: 0;}
+    .business_cont figure>figcaption{
+      display: none;
+      position: absolute; left: 50%; top: 50%;
+      transform: translate(-50%,-50%);
+      height: auto;
+      margin: 0;
+    }
+    .business_cont figcaption>strong{margin-bottom: 5px;}
+    .business_cont figure:hover>img{opacity: 0.3;}
+    .business_cont figure:hover>figcaption{display: block;}
+} /* end of 600px */

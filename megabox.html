@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="author" content="전아련">
+ <meta name="keywords" content="메가박스, 영화, 영화관, 영화순위, 개봉예정, 예매">
+ <title>메가박스</title>
+ 
+ <!-- css -->
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/plugIn/swiper.css">
+ <link rel="stylesheet" href="css/mega_style.css">
+ <!-- 파비콘 -->
+ <link rel="shortcut icon" href="images/mega_images/favicon.ico">
+ <!-- 자바스크립트 -->
+ <script src="js/plugIn/jquery-1.12.4.js"></script>
+ <script src="js/plugIn/swiper.min.js"></script>
+ <script src="js/mega_script.js"></script>
+ <!-- HTML5shiv ie6~8 -->
+ <!--
+  [if lt Ie 9]
+  <script src="js/html5shiv.min.js"></script>
+  <script type="text/javascript">
+   alert("현재 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+  </script>
+ -->
+</head>
+<body>
+ <header>
+  <div class="container clearfix">
+   <h1>
+    <a href="#">
+     <em><img src="images/mega_images/logo.png" alt="MEGABOX"></em>
+     <strong><img src="images/mega_images/logo-sub.png" alt="life theater"></strong>
+    </a>
+   </h1>
+   <nav id="mNav">
+    <h2 class="readonly">메가박스 전체메뉴</h2>
+    <a href="#" class="ham"><span></span></a>
+   </nav>
+   <nav id="pcNav">
+    <ul class="gnb clearfix">
+     <li><a href="#">영화</a></li>
+     <li><a href="#">큐레이션</a></li>
+     <li><a href="#">영화관</a></li>
+     <li><a href="#">특별관</a></li>
+     <li class="store"><a href="#">스토어<span>New</span></a></li>
+     <li><a href="#">이벤트</a></li>
+     <li><a href="#">로그인</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header> <!-- end of header -->
+ 
+ <hr />
+ 
+ <section id="banner">
+  <h2 class="readonly">영화관 소식</h2>
+  <div class="banner_menu">
+   <div class="container clearfix">
+    <div class="bm_left">
+     <ul>
+      <li class="total"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>전체메뉴</a></li>
+      <li class="line"><a href="#">필름 소사이어티</a></li>
+      <li><a href="#">클래식 소사이어티</a></li>
+     </ul>
+    </div>
+    <div class="bm_right">
+     <ul class="clearfix">
+      <li class="line"><a href="#">고객센터</a></li>
+      <li class="line"><a href="#">멤버쉽</a></li>
+      <li><a href="#">VIP</a></li>
+      <li class="white"><a href="#">상영시간표</a></li>
+      <li class="purple"><a href="#">빠른 예매<span>예매 아이콘</span></a></li>
+     </ul>
+    </div>
+   </div>
+  </div> <!-- end of banner_menu -->
+  <div class="slides">
+   <div class="swiper-container">
+    <ul class="swiper-wrapper">
+     <li class="swiper-slide slide1">
+      <div class="container">
+       <h2 class="readonly">별-별 닉네임 상영관</h2>
+      </div>
+     </li>
+     <li class="swiper-slide slide2">
+      <div class="container">
+       <h2>뮤지컬 몬테 크리스토<em>MONTE CRISTO</em></h2>
+       <p>뮤지컬로 돌아온 전설적인 복수극</p>
+      </div>
+     </li>
+     <li class="swiper-slide slide3">
+      <div class="container">
+       <h2>블랙머니<em>BLACK MONEY</em></h2>
+       <p>대한민국을 뒤흔들 금융범죄 실화극</p>
+      </div>
+     </li>
+     <li class="swiper-slide slide4">
+      <div class="container">
+       <h2>두 번째 라이프 다이어리<em>LIFE DIALY 2020</em></h2>
+       <p>1년을 기록하는 한 권의 책</p>
+      </div>
+     </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+   </div> <!-- end of slides -->
+  </div>
+ </section> <!-- end of banner -->
+ 
+ <hr />
+ 
+ <section id="movie">
+  <div class="container">
+   <aside>
+   <ul>
+     <li>
+       <a href="#">
+         <i class="fas fa-crown"></i> <br /> 
+         2019 <br /> VIP안내
+       </a>
+     </li>
+     <li>
+       <a href="#">더 부티크 <br /> 프라이빗 <br /> 대관예매</a>
+     </li>
+     <li>
+       <a href="#">무비 <br /> 포스트</a>
+     </li>
+     <li>
+       <a href="#">할인카드 <br /> 안내</a>
+     </li>
+     <li class="up">
+       <a href="#"><i class="fas fa-arrow-up"></i></a>
+     </li>
+   </ul>
+ </aside> <!-- end of side -->
+   <div class="blank">
+    <h2>영화예매</h2>
+    <p><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>전체보기</a></p>
+    <div class="movie_title">
+     <ul class="clearfix">
+      <li class="on"><a href="#">박스오피스</a></li>
+      <li><a href="#">최신개봉작</a></li>
+      <li><a href="#">상영예정작</a></li>
+      <li><a href="#">큐레이션</a></li>
+     </ul>
+    </div> <!-- end of movie_title -->
+    <div class="movie_chart">
+     <div class="cont1 clearfix">
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster1.jpg" srcset="images/mega_images/box_poster1@2.jpg 2x" alt="겨울왕국"></figure>
+        <div class="rank"><strong>1</strong></div>
+        <div class="mark_special">
+         <span class="mx">MX</span>
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>겨울왕국 2</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div1 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster2.jpg" srcset="images/mega_images/box_poster2@2.jpg 2x" alt="블랙머니"></figure>
+        <div class="rank"><strong>2</strong></div>
+        <div class="mark_special">
+         <span class="mx">MX</span>
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>블랙머니</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div2 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster3.jpg" srcset="images/mega_images/box_poster3@2.jpg 2x" alt="신의 한 수:귀수편"></figure>
+        <div class="rank"><strong>3</strong></div>
+        <div class="mark_special">
+         <span class="mx">MX</span>
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="five">15세 관람가</span><strong>신의 한 수:귀수편</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div3 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster4.jpg" srcset="images/mega_images/box_poster4@2.jpg 2x" alt="웃는남자"></figure>
+        <div class="rank"><strong>4</strong></div>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>[뮤지컬] 웃는남자</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div4 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster5.jpg" srcset="images/mega_images/box_poster5@2.jpg 2x" alt="아이리시맨"></figure>
+        <div class="rank"><strong>5</strong></div>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="nine">19세 관람가</span><strong>아이리시맨</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div5 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/box_poster6.jpg" srcset="images/mega_images/box_poster6@2.jpg 2x" alt="웃는남자"></figure>
+        <div class="rank"><strong>6</strong></div>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>82년생 김지영</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont1 - div6 -->
+     </div> <!-- end of cont1 -->
+     <div class="cont2 clearfix">
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster1.jpg" srcset="images/mega_images/new_poster1@2.jpg 2x" alt="[오패라] 토스카"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>[오패라] 토스카</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div1 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster2.jpg" srcset="images/mega_images/new_poster2@2.jpg 2x" alt="윤희에게"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>윤희에게</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div2 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster3.jpg" srcset="images/mega_images/new_poster3@2.jpg 2x" alt="[뮤지컬] 몬테크리스토"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>[뮤지컬] 몬테크리스토</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div3 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster4.jpg" srcset="images/mega_images/new_poster4@2.jpg 2x" alt="대통령의 7시간"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>대통령의 7시간</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div4 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster5.jpg" srcset="images/mega_images/new_poster5@2.jpg 2x" alt="[HE;STORY] 드라이브"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="nine">19세 관람가</span><strong>[HE;STORY] 드라이브</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div5 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/new_poster6.jpg" srcset="images/mega_images/new_poster6@2.jpg 2x" alt="삽질"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="two">12세 관람가</span><strong>삽질</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont2 - div6 -->
+     </div> <!-- end of cont2 -->
+     <div class="cont3 clearfix">
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster1.jpg" srcset="images/mega_images/sc_poster1@2.jpg 2x" alt="[GET9] 로렌스 애니웨이"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="five">15세 관람가</span><strong>[GET9] 로렌스 애니웨이</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div1 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster2.jpg" srcset="images/mega_images/sc_poster2@2.jpg 2x" alt="아이리시맨"></figure>
+        <div class="mark_special">
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="nine">19세 관람가</span><strong>아이리시맨</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div2 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster3.jpg" srcset="images/mega_images/sc_poster3@2.jpg 2x" alt="겨울왕국 2"></figure>
+        <div class="mark_special">
+         <span class="mx">MX</span>
+         <span class="bq">Boutique</span>
+        </div>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>겨울왕국 2</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div3 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster4.jpg" srcset="images/mega_images/sc_poster4@2.jpg 2x" alt="얼굴없는 보스"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="five">15세 관람가</span><strong>얼굴없는 보스</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div4 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster5.jpg" srcset="images/mega_images/sc_poster5@2.jpg 2x" alt="프란치스코 교황 : 맨 오브 히스 워드 상세보기"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>프란치스코 교황 : 맨 오브 히스 워드 상세보기</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div5 -->
+      <div class="add">
+       <div class="poster">
+        <figure><img src="images/mega_images/sc_poster6.jpg" srcset="images/mega_images/sc_poster6@2.jpg 2x" alt="헤로니모"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>헤로니모</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont3 - div6 -->
+     </div> <!-- end of cont3 -->
+     <div class="cont4 clearfix">
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/q_poster1.jpg" srcset="images/mega_images/q_poster1@2.jpg 2x" alt="[뮤지컬] 웃는남자"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>[뮤지컬] 웃는남자</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont4 - div1 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/q_poster2.jpg" srcset="images/mega_images/q_poster2@2.jpg 2x" alt="[라이브뷰잉] Roselia×RAISE"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>[라이브뷰잉] Roselia×RAISE A SUILE 합동라이브「Rausch und/and Craziness」</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont4 - div2 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/q_poster3.jpg" srcset="images/mega_images/q_poster3@2.jpg 2x" alt="[동화음악회] 잘못 걸린 짝"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>[동화음악회] 잘못 걸린 짝</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont4 - div3 -->
+      <div>
+       <div class="poster">
+        <figure><img src="images/mega_images/q_poster4.jpg" srcset="images/mega_images/q_poster4@2.jpg 2x" alt="[시네도슨트] 바티칸 미술관"></figure>
+       </div>
+       <div class="info">
+        <h3><span class="all">전체관람가</span><strong>[시네도슨트] 바티칸 미술관</strong></h3>
+        <div class="info_btn">
+         <a href="#">상세정보</a>
+         <a href="#">예매하기</a>
+        </div>
+       </div>
+      </div> <!-- end of cont4 - div4 -->
+     </div> <!-- end of cont4 -->
+    </div> <!-- end of movie_chart -->
+   </div>
+  </div>
+ </section> <!-- end of movie -->
+ 
+ <hr />
+ 
+ <section id="event">
+  <div class="container">
+   <div class="blank clearfix">
+    <h2>새로운 이벤트</h2>
+    <div class="event_left clearfix">
+     <div class="swiper-container">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="images/mega_images/newEvent_s1.jpg" srcset="images/mega_images/newEvent_s1@2.jpg 2x" alt="부산행">
+        </li>
+        <li class="swiper-slide">
+          <img src="images/mega_images/newEvent_s2.jpg" srcset="images/mega_images/newEvent_s2@2.jpg 2x" alt="1318 어셈블!">
+        </li>
+        <li class="swiper-slide">
+          <img src="images/mega_images/newEvent_s3.jpg" srcset="images/mega_images/newEvent_s3@2.jpg 2x" alt="올해가 얼마 남지 않았다! 2020년 VIP">
+        </li>
+        <li class="swiper-slide">
+          <img src="images/mega_images/newEvent_s4.jpg" srcset="images/mega_images/newEvent_s4@2.jpg 2x" alt="날씨의 아이 콤보">
+        </li>
+        <li class="swiper-slide">
+          <img src="images/mega_images/newEvent_s5.jpg" srcset="images/mega_images/newEvent_s5@2.jpg 2x" alt="빨간날엔 BC와 완전 신나쵸!">
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+     </div>
+     <div class="event_box1">
+      <img src="img/event02.jpg" srcset="images/mega_images/event02@2.jpg 2x" alt="시티 패키지">
+     </div>
+     <div class="event_box2">
+      <img src="img/event03.jpg" srcset="images/mega_images/event03@2.jpg 2x" alt="설 선물 이수점 전용 관람권 런칭">
+     </div>
+    </div>
+    <div class="event_right">
+     <img src="img/event04.jpg" srcset="images/mega_images/event04@2.jpg 2x" alt="사표 대신 영화표">
+    </div>
+   </div>
+  </div>
+ </section> <!-- end of event -->
+ 
+ <hr />
+ 
+ <section id="opening">
+  <div class="container">
+   <h2><span class="grand">Grand Opening</span></h2>
+   <strong class="date">2019.11</strong>
+   <p class="desc">LIFE THEATER로 새롭게 시작하는 메가박스를 만나보세요!</p>
+   <div class="open_box clearfix">
+    <div>
+     <h3>신규오픈</h3>
+     <p><em>서울특별시</em><strong>성수</strong>2019년 11월 8일</p>
+    </div>
+    <div>
+     <h3>신규오픈</h3>
+     <p><em>서울특별시</em><strong>홍대</strong>2019년 9월 25일</p>
+    </div>
+    <div>
+     <h3>신규오픈</h3>
+     <p><em>경기도 부천시</em><strong>부천스타필드시티</strong>2019년 9월 3일</p>
+    </div>
+   </div>
+  </div>
+ </section> <!-- end of opening -->
+ 
+ <hr />
+ 
+ <section id="association">
+   <div class="container">
+     <div class="blank clearfix">
+       <h2>제휴 이벤트</h2>
+       <div class="left clearfix">
+         <img src="images/mega_images/association1.jpg" srcset="images/mega_images/association1@2.jpg 2x" alt="GS칼텍스 I am your Cinema">
+         <img src="images/mega_images/association2.jpg" srcset="images/mega_images/association2@2.jpg 2x" alt="빨간날엔 BC와 완전 신나쵸!">
+         <img src="images/mega_images/association3.jpg" srcset="images/mega_images/association3@2.jpg 2x" alt="메가박스에서 영화 예매 할인받고 데이터와 팝콘 콤보까지">
+         <img src="images/mega_images/association4.jpg" srcset="images/mega_images/association4@2.jpg 2x" alt="Coex PASS">
+       </div>
+       <div class="right random">
+         <img src="images/mega_images/association5.jpg" srcset="images/mega_images/association5@2.jpg 2x" alt="듀오 러브성향 테스트 GO">
+         <img src="images/mega_images/association6.jpg" srcset="images/mega_images/association6@2.jpg 2x" alt="현대해상 다이렉트">
+         <img src="images/mega_images/association7.jpg" srcset="images/mega_images/association7@2.jpg 2x" alt="BHC 맛초킹">
+         <img src="images/mega_images/association8.jpg" srcset="images/mega_images/association8@2.jpg 2x" alt="피자헛 메가더블세트">
+         <img src="images/mega_images/association9.jpg" srcset="images/mega_images/association9@2.jpg 2x" alt="나이브스 아웃 12월 4일 대개봉">
+         <img src="images/mega_images/association10.jpg" srcset="images/mega_images/association10@2.jpg 2x" alt="이루지 못한 새해 목표">
+         <img src="images/mega_images/association11.jpg" srcset="images/mega_images/association11@2.jpg 2x" alt="감쪽같은 그녀 12월 4일 대개봉">
+       </div>
+     </div>
+   </div>
+ </section> <!-- end of association -->
+ 
+ <hr />
+ 
+ <section id="info">
+   <div class="container">
+     <div class="blank clearfix">
+       <article class="info_box1">
+         <h3>공지사항</h3>
+         <div class="notice">
+           <ul class="clearfix">
+             <li class="active">
+               <a href="#">전체공지</a>
+               <ul>
+                 <li>
+                   <dl>
+                     <dt><strong class="bar">전체</strong><em>2019.10.18</em></dt>
+                     <dd>[무대인사] &lang;82년생 김지영&rang; 2주차 (11/2~11/3)</dd>
+                   </dl>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">전체</strong><em>2019.10.15</em></dt>
+                   <dd>[무대인사] &lang;두번할까요&rang; 개봉주 무대인사 (10/17)</dd>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">전체</strong><em>2019.10.15</em></dt>
+                   <dd>[무대인사] &lang;82년생 김지영&rang; 1주차 (10/26~10/27)</dd>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">전체</strong><em>2019.10.12</em></dt>
+                   <dd>[무대인사] &lang;두번할까요&rang; 1주차 (10/18)</dd>
+                 </li>
+               </ul>
+             </li>
+             <li>
+               <a href="#">영화관 공지</a>
+               <ul>
+                 <li>
+                   <dl>
+                     <dt><strong class="bar">대전</strong><em>2019.10.17</em></dt>
+                     <dd>[천안] 소방서 주관 소방훈련 실시 안내</dd>
+                   </dl>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">서울</strong><em>2019.09.30</em></dt>
+                   <dd>[군자] 건물 내 전기점검 관련 안내</dd>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">서울</strong><em>2019.09.26</em></dt>
+                   <dd>[상암월드컵경기장] K-리그 축구 경기에 따른 주차안내(9/25)</dd>
+                 </li>
+                 <li>
+                   <dt><strong class="bar">서울</strong><em>2019.09.26</em></dt>
+                   <dd>[상봉] 주차장 바닥 도장 공사 안내</dd>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </article>
+       
+       <article class="info_box2">
+         <h3>메가박스 할인카드</h3>
+         <div class="discount">
+           <ul>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/card01.jpg" srcset="images/mega_images/card01@2.jpg 2x" alt="T멤버십 일반"></span>
+                 <p>
+                   <strong>T멤버십 일반</strong>
+                   <em>영화 2000원 할인 <br /> (1일 5매)</em>
+                 </p>
+               </a>
+             </li>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/card02.jpg" srcset="images/mega_images/card02@2.jpg 2x" alt="LG U+"></span>
+                 <p>
+                   <strong>LG U+</strong>
+                   <em>영화 1000원 현장 할인 <br /> (1일 1회 / 월 4회)</em>
+                 </p>
+               </a>
+             </li>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/card03.jpg" srcset="images/mega_images/card03@2.jpg 2x" alt="중앙멤버십"></span>
+                 <p>
+                   <strong>중앙멤버십</strong>
+                   <em>현장할인, 인터넷할인 <br /> (연 24회)</em>
+                 </p>
+               </a>
+             </li>
+           </ul>
+         </div>
+       </article>
+       
+       <article class="info_box3">
+         <h3>고객센터</h3>
+         <div class="service">
+           <ul class="clearfix">
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/service1.png" alt="1:1문의"></span>
+                 <strong>1:1문의</strong>
+               </a>
+             </li>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/service2.png" alt="단체관람/대관문의"></span>
+                 <strong>단체관람/대관문의</strong>
+               </a>
+             </li>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/service3.png" alt="자주묻는질문"></span>
+                 <strong>자주묻는질문</strong>
+               </a>
+             </li>
+             <li>
+               <a href="#">
+                 <span><img src="images/mega_images/service4.png" alt="분실물 문의/접수"></span>
+                 <strong>분실물 문의/접수</strong>
+               </a>
+             </li>
+           </ul>
+         </div>
+       </article>
+     </div>
+   </div>
+ </section>
+ 
+ <hr />
+ 
+ <section id="last_banner" class="random2">
+   <div class="container">
+     <img src="images/mega_images/last_banner1.jpg" srcset="images/mega_images/last_banner1@2.jpg 2x" alt="">
+     <img src="images/mega_images/last_banner2.jpg" srcset="images/mega_images/last_banner2@2.jpg 2x" alt="">
+     <img src="images/mega_images/last_banner3.jpg" srcset="images/mega_images/last_banner3@2.jpg 2x" alt="">
+     <img src="images/mega_images/last_banner4.jpg" srcset="images/mega_images/last_banner4@2.jpg 2x" alt="">
+     <img src="images/mega_images/last_banner5.jpg" srcset="images/mega_images/last_banner5@2.jpg 2x" alt="">
+     <img src="images/mega_images/last_banner6.jpg" srcset="images/mega_images/last_banner6@2.jpg 2x" alt="">
+   </div>
+ </section> <!-- end of last_banner -->
+ 
+ <hr />
+ 
+ <section id="cinema">
+   <div class="container">
+     <div class="blank">
+       <h2>메가박스 영화관 찾기</h2>
+       <div id="c_list">
+         <ul>
+           <li class="clearfix">
+             <strong>서울</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">강남</a></li>
+               <li><a href="#">강남대로(씨티)</a></li>
+               <li><a href="#">강동</a></li>
+               <li><a href="#">군자</a></li>
+               <li><a href="#">동대문</a></li>
+               <li><a href="#">마곡</a></li>
+               <li><a href="#">목동</a></li>
+               <li><a href="#">상봉</a></li>
+               <li><a href="#">상암월드컵경기장</a></li>
+               <li><a href="#">성수</a></li>
+               <li><a href="#">센트럴</a></li>
+               <li><a href="#">송파파크하비오</a></li>
+               <li><a href="#">신촌</a></li>
+               <li><a href="#">은평</a></li>
+               <li><a href="#">이수</a></li>
+               <li><a href="#">창동</a></li>
+               <li><a href="#">코엑스</a></li>
+               <li><a href="#">홍대</a></li>
+               <li><a href="#">화곡</a></li>
+               <li><a href="#">ARTNINE</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>경기</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">고양스타필드</a></li>
+               <li><a href="#">김포한강신도시</a></li>
+               <li><a href="#">남양주</a></li>
+               <li><a href="#">동탄</a></li>
+               <li><a href="#">미사강변</a></li>
+               <li><a href="#">백석</a></li>
+               <li><a href="#">별내</a></li>
+               <li><a href="#">부천스타필드시티</a></li>
+               <li><a href="#">분당</a></li>
+               <li><a href="#">수원</a></li>
+               <li><a href="#">수원남문</a></li>
+               <li><a href="#">시흥배곧</a></li>
+               <li><a href="#">안산중앙</a></li>
+               <li><a href="#">양주</a></li>
+               <li><a href="#">영통</a></li>
+               <li><a href="#">용인테크노밸리</a></li>
+               <li><a href="#">의정부 민락</a></li>
+               <li><a href="#">일산</a></li>
+               <li><a href="#">일산벨라시타</a></li>
+               <li><a href="#">킨텍스</a></li>
+               <li><a href="#">킨텍스</a></li>
+               <li><a href="#">파주금촌</a></li>
+               <li><a href="#">파주운정</a></li>
+               <li><a href="#">파주출판도시</a></li>
+               <li><a href="#">평택</a></li>
+               <li><a href="#">하남스타필드</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>인천</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">검단</a></li>
+               <li><a href="#">송도</a></li>
+               <li><a href="#">영종</a></li>
+               <li><a href="#">인천논현</a></li>
+               <li><a href="#">청라</a></li>
+               <li><a href="#">청라지젤</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>대전 | 세종 | 충청</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">공주</a></li>
+               <li><a href="#">대전</a></li>
+               <li><a href="#">대전중앙로</a></li>
+               <li><a href="#">세종</a></li>
+               <li><a href="#">오창</a></li>
+               <li><a href="#">제천</a></li>
+               <li><a href="#">진천</a></li>
+               <li><a href="#">천안</a></li>
+               <li><a href="#">청주충북대</a></li>
+               <li><a href="#">충주</a></li>
+               <li><a href="#">홍성내포</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>부산 | 경상</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">거창</a></li>
+               <li><a href="#">경북도청</a></li>
+               <li><a href="#">경산하양</a></li>
+               <li><a href="#">경주</a></li>
+               <li><a href="#">구미강동</a></li>
+               <li><a href="#">김천</a></li>
+               <li><a href="#">남포항</a></li>
+               <li><a href="#">대구(칠성로)</a></li>
+               <li><a href="#">대구 신세계</a></li>
+               <li><a href="#">대구 이시아</a></li>
+               <li><a href="#">덕천</a></li>
+               <li><a href="#">마산</a></li>
+               <li><a href="#">문경</a></li>
+               <li><a href="#">부산극장</a></li>
+               <li><a href="#">부산대</a></li>
+               <li><a href="#">북대구(칠곡)</a></li>
+               <li><a href="#">사천</a></li>
+               <li><a href="#">삼천포</a></li>
+               <li><a href="#">양산</a></li>
+               <li><a href="#">양산라피에스타</a></li>
+               <li><a href="#">울산</a></li>
+               <li><a href="#">정관</a></li>
+               <li><a href="#">창원</a></li>
+               <li><a href="#">해운대(장산)</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>광주 | 전라</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">광주상무</a></li>
+               <li><a href="#">광주하남</a></li>
+               <li><a href="#">남원</a></li>
+               <li><a href="#">목포</a></li>
+               <li><a href="#">목포하당(포르모)</a></li>
+               <li><a href="#">송천</a></li>
+               <li><a href="#">순천</a></li>
+               <li><a href="#">여수</a></li>
+               <li><a href="#">여수웅천</a></li>
+               <li><a href="#">전대(광주)</a></li>
+               <li><a href="#">전주(객사)</a></li>
+               <li><a href="#">첨단(광주)</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>강원</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">남춘천</a></li>
+               <li><a href="#">속초</a></li>
+               <li><a href="#">원주</a></li>
+               <li><a href="#">원주센트럴</a></li>
+             </ul>
+           </li>
+           <li class="clearfix">
+             <strong>제주</strong>
+             <ul class="sub_li clearfix">
+               <li><a href="#">제주</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </section>
+ 
+ <hr />
+ 
+ <footer>
+   <div class="container">
+     <div class="blank">
+       <h2><a href="megabox.html"><img src="images/mega_images/f_logo.png" srcset="images/mega_images/f_logo@2.png 2x" alt="메가박스 풋터로고"></a></h2>
+       <h3>ARS<a href="#">1544-0000</a></h3>
+       <div id="fnb">
+         <ul class="clearfix">
+           <li><a href="#">회사소개</a></li>
+           <li><a href="#">채용정보</a></li>
+           <li><a href="#">제휴/광고/부대사업 문의</a></li>
+           <li><a href="#">이용약관</a></li>
+           <li><a href="#">개인정보 처리방침</a></li>
+           <li><a href="#">고객센터</a></li>
+           <li><a href="#">윤리경영</a></li>
+         </ul>
+       </div>
+       <div id="sns">
+         <ul class="clearfix">
+           <li><a href="#">트위터</a></li>
+           <li><a href="#">페이스북</a></li>
+           <li><a href="#">인스타그램</a></li>
+           <li><a href="#">구글</a></li>
+           <li><a href="#">애플</a></li>
+         </ul>
+       </div>
+       <address>
+         서울특별시 성동구 왕십리로 50, 6층(성수동 1가, 메가박스스퀘어) <br />
+         대표자명 김진선 | 개인정보보호 책임자 BP본부 본부장 박영진 <br />
+         사업자등록번호 211-86-59478 | 통신판매업신고번호 제 833호
+         <span>Copyright 2014 by MegaboxJoongAng, Inc. All rights reserved</span>
+       </address>
+     </div>
+   </div>
+ </footer>
+</body>
+</html>

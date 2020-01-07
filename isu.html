@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>isu E&amp;C</title>
+
+  <!------------------ fontawesome ------------------->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/isu_style.css">
+  <link rel="stylesheet" href="css/isu_main_style.css">
+  
+  <!-- js 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/isu_script.js"></script>
+  
+  <!-- HTML5shiv ie6~8 -->
+  <!--
+    [if lt Ie 9]
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+     alert("현재 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+    </script>
+   -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <a href="isu.html">
+          <img src="images/isu/logo.png" alt="이수건설 로고">
+        </a>
+      </h1>
+      <button type="button" class="hamBtn icon">menu image</button>
+      <nav id="gnb_b">
+        <button type="button" class="close icon">close image</button>
+        <ul class="clearfix">
+          <li>
+            <a href="#">회사소개<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">CEO인사말</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">VISION</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">이수그룹소개</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">주요사업<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">건축사업</a></li>
+                <li><a href="#">토목사업</a></li>
+                <li><a href="#">플랜트사업</a></li>
+                <li><a href="#">주택사업</a></li>
+                <li><a href="#">조경사업</a></li>
+                <li><a href="#">해외사업</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">분양<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">분양정보</a></li>
+                <li><a href="#">현장정보</a></li>
+                <li><a href="#">입주안내</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">채용정보<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">복리후생</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">인사제도</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">홍보센터<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">브라운스톤</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">기업뉴스</a></li>
+                <li><a href="#">이수사보</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="sub/isu_customer.html">고객센터<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">A/S</a></li>
+                <li><a href="sub/isu_customer.html">찾아오시는길</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav> <!-- end of nav.gnb_b -->
+    </div>
+    <div class="tnb clearfix">
+      <div class="container">
+        <p>ENGLISH</p>
+        <p>CHINESE</p>
+      </div>
+    </div>
+  </header> <!-- end of header -->
+  <div class="gnb_bBg"></div>
+  
+  <hr />
+  
+  <nav id="gnb_s">
+    <button type="button" class="close icon">close image</button>
+    <ul class="clearfix">
+      <li>
+        <a href="#">
+          회사소개
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">CEO인사말</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">VISION</a></li>
+            <li><a href="#">윤리경영</a></li>
+            <li><a href="#">조직도</a></li>
+            <li><a href="#">이수그룹소개</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#"> 
+          주요사업
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">건축사업</a></li>
+            <li><a href="#">토목사업</a></li>
+            <li><a href="#">플랜트사업</a></li>
+            <li><a href="#">주택사업</a></li>
+            <li><a href="#">조경사업</a></li>
+            <li><a href="#">해외사업</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          분양
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">분양정보</a></li>
+            <li><a href="#">현장정보</a></li>
+            <li><a href="#">입주안내</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          채용정보
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">인재상</a></li>
+            <li><a href="#">복리후생</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">인사제도</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          홍보센터
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">브라운스톤</a></li>
+            <li><a href="#">홍보영상</a></li>
+            <li><a href="#">기업뉴스</a></li>
+            <li><a href="#">이수사보</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="sub/isu_customer.html">
+          고객센터
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">A/S</a></li>
+            <li><a href="sub/isu_customer.html">찾아오시는길</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav> <!-- end of nav.gnb_s -->
+  <div class="gnb_sBg"></div>
+  
+  <hr />
+  
+  <section id="banner">
+    <div class="container">
+      <h2><img src="images/isu/bs_logo.png" alt="Brown Stone"></h2>
+      <p>
+        브라운스톤은 단순히 주거공간을 제공하는 주택 이미지를 탈피해 <br />
+        사람들의 삶 이상의 가치를 실현할 공간을 이미지화 하였습니다.
+      </p>
+      <ul class="clearfix">
+        <li><a href="#">분양안내<span class="icon">icon</span></a></li>
+        <li><a href="#">브라운스톤<span class="icon">icon</span></a></li>
+        <li><a href="#">홍보영상<span class="icon">icon</span></a></li>
+      </ul>
+    </div>
+    <div class="banner_bg"><img src="images/isu/banner.jpg" alt="이수건설 브라운스톤"></div>
+  </section>
+  
+  <hr />
+  
+  <section id="notice">
+    <div class="container">
+      <h2>회사소개</h2>
+      <p>“건설은 아름다운 미래를 여는 힘! 이수건설이 세계를 감동시키겠습니다.”</p>
+      <div class="notice_cont clearfix">
+        <article id="notice_banner">
+          <h2 class="readonly">회사소개 영상 및 배너</h2>
+          <iframe class="video" src="https://www.youtube.com/embed/xVCJEdU6sVs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span class="image">회사소개 배너 이미지</span>
+        </article>
+        <article id="intro">
+            <h3>이수건설</h3>
+            <p>
+              건축, 토목, 플랜트, 환경 등 전 분야에 걸쳐 사업다각화를 적극 추진하고 있습니다.
+            </p>
+            <a href="#">자세히 보기<i class="fas fa-caret-right"></i></a>
+        </article>
+        <article id="system" class="cont">
+          <h3>전자계약</h3>
+          <p>
+            이수건설은 품격과 명예를 담고자 노력 합니다.
+          </p>
+          <a href="#">자세히 보기<i class="fas fa-caret-right"></i></a>
+        </article>
+        <article id="person" class="cont">
+          <h3>인재채용</h3>
+          <p>
+           이수그룹은 인재육성을 통해 경영과 성과를 향상하고 경쟁력을 강화하여 세계 일류기업으로 나아가고자 합니다.
+          </p>
+          <a href="#">자세히 보기<i class="fas fa-caret-right"></i></a>
+        </article>
+        <article id="news">
+          <h3>기업뉴스<a href="#"><span class="icon">plus icon</span></a></h3>
+          <table>
+            <caption class="readonly">기업뉴스</caption>
+            <tbody>
+              <tr>
+                <td>215</td>
+                <th><a href="#">이수건설, 2019년 고객품질대상 우수상 수상</a></th>
+                <td>2019.12.03</td>
+              </tr>
+              <tr>
+                <td>214</td>
+                <th><a href="#">부천원종 LH참여형 가로주택정비사업</a></th>
+                <td>2019.11.22</td>
+              </tr>
+              <tr>
+                <td>213</td>
+                <th><a href="#">서울개포 상록아파트 전기공사 수주</a></th>
+                <td>2019.11.08</td>
+              </tr>
+              <tr>
+                <td>212</td>
+                <th><a href="#">경산무학 A6BL 민간참여 공공주택 수주</a></th>
+                <td>2019.11.08</td>
+              </tr>
+              <tr>
+                <td>211</td>
+                <th><a href="#">평택고덕 지식산업센터 신축공사 수주</a></th>
+                <td>2019.11.07</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="direction" class="cont">
+          <h3>오시는 길</h3>
+          <p>
+            서울특별시 서초구 사평대로 84 <br />(반포동) 06575
+          </p>
+          <a href="sub/isu_customer.html">자세히 보기<i class="fas fa-caret-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <section id="business">
+    <div class="container">
+      <h2>사업소개</h2>
+      <p>미래가 열리는 아름다운 주거 공간, 이수건설이 만들면 가치가 달라집니다.</p>
+      <div class="business_cont clearfix">
+        <div class="main">
+          <a href="#">
+            <figure>
+              <img src="images/isu/building.jpg" alt="이수건설 _ 건축사업">
+              <figcaption>
+                <strong>건축사업</strong>
+                건축은 그 목적이라는 측면에서 보면 '인간의 생활을 담는 그릇' 으로 비유될 수 있습니다.
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="main">
+          <a href="#">
+            <figure>
+              <img src="images/isu/garden.jpg" alt="이수건설 _ 조경사업">
+              <figcaption>
+                <strong>조경사업</strong>
+                인간과 자연이 조화를 이루는 그들만의 외부 공간을 창출합니다.
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="main">
+          <a href="#">
+            <figure>
+              <img src="images/isu/foreign.jpg" alt="이수건설 _ 해외사업">
+              <figcaption>
+                <strong>해외사업</strong>
+                이수건설의 해외사업은 더 넓은 세상을 향해 오늘도 계속되고 있습니다.
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <section id="apart">
+    <div class="container clearfix">
+      <div class="apart_left">
+        <h2>분양정보</h2>
+        <p>전통의 품격에 현대의 세련미를 더한 브라운스톤, 브라운스톤의 분양단지를 소개합니다.</p>
+        <div class="a_btn">
+          <button class="a_btn1 on">1</button>
+          <button class="a_btn2">2</button>
+          <button class="a_btn3">3</button>
+          <button class="a_btn4">4</button>
+        </div>
+      </div>
+      <div class="apart_right">
+        <ul class="clearfix">
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/isu/apart1.jpg" alt="전주 우아한시티<">
+                <figcaption>
+                  <strong>전주 우아한시티</strong> 
+                  전라북도 전주시 덕진구 우아동3가 747-81번지 일대 <br />
+                  규모 : 지하 2층, 지상 18~25층, 11개동 998세대
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+              <img src="images/isu/apart2.jpg" alt="브라운스톤 계양스카이">
+                <figcaption>
+                  <strong>브라운스톤 계양스카이</strong>
+                  인천광역시 계양구 작전동 425-6번지 <br />
+                  규모 : 지하2층~ 지상33층, 4개동 282세대
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/isu/apart3.jpg" alt="브라운스톤 하이포레">
+                <figcaption>
+                  <strong>브라운스톤 하이포레</strong>
+                  부산광역시 서구 동대신3가 63-2 <br />
+                  규모 : 지하3층~지상27층, 6개동 554세대
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/isu/apart4.jpg" alt="양산 물금 범어주공 1단지">
+                <figcaption>
+                  <strong>양산 물금 범어주공 1단지</strong>
+                  경상남도 양산시 물금읍 범어리 409번지 일대 <br />
+                  규모 : 842세대
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <div class="fixed_bg">fixed background image</div>
+  
+  <hr />
+  
+  <footer>
+    <div id="fnb">
+      <div class="container">
+        <ul class="clearfix">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">채용정보</a></li>
+          <li><a href="#">기업뉴스</a></li>
+          <li><a href="#">A/S정보</a></li>
+          <li class="company">
+            <a href="#" class="allMenu">이수계열사 전체보기</a>
+            <div class="company_li">
+              <div>
+                <h2>이수계열사</h2>
+                <ul class="clearfix">
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg01.png" alt="(주) 이수"></span>(주) 이수</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg02.png" alt="이수화학"></span>이수화학</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg03.png" alt="이수페타시스"></span>이수페타시스</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg04.png" alt="이수건설"></span>이수건설</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg05.png" alt="이수시스템"></span>이수시스템</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg06.png" alt="이수창업투자"></span>이수창업투자</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg07.png" alt="이수앱지스"></span>이수앱지스</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg08.png" alt="이수엑사켐"></span>이수엑사켐</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg09.png" alt="이수엑사보드"></span>이수엑사보드</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg10.png" alt="이수 C&E"></span>이수 C&amp;E</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg11.png" alt="토다이수"></span>토다이수</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="images/isu/allMenu_bg12.png" alt="이수AMC"></span>이수AMC</a>
+                  </li>
+                </ul>
+                <button class="icon close2">close</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_main">
+      <div class="container">
+        <h2><a href="#"><img src="images/isu/footer_logo.png" alt="footer logo"></a></h2>
+        <div class="cont">
+          <p>
+            <a href="#">TEL : 02)590-6500</a>
+            사업자등록번호 : 206-81-40254
+            <span>대표이사 : 제민호</span>
+            <span>서울특별시 서초구 사평대로 84 (반포동)</span>
+          </p>
+          <address>
+            개인 포트폴리오로 해당 기업과는 관련없음을 알려드립니다.
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

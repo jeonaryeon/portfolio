@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>시크라인</title>
+ <link rel="stylesheet" href="css/chicLine_style.css">
+ <script src="js/plugIn/jquery-1.12.4.js"></script>
+ <script src="js/chicLine_script.js"></script>
+</head>
+<body>
+ <div class="top_banner">
+  <ul>
+   <li><a href="#"><img src="images/chicLine/top_banner1.gif" alt="자체 제작 상품_ONLY FOR YOU"></a></li>
+   <li><a href="#"><img src="images/chicLine/top_banner2.gif" alt="chic-line 앱 출시"></a></li>
+   <li><a href="#"><img src="images/chicLine/top_banner3.gif" alt="자제 디자인 한복 5% sale"></a></li>
+  </ul>
+ </div>
+ 
+ <hr />
+ 
+ <header>
+  <div class="header_top">
+   <div class="lnb clearfix">
+    <select name="lang" id="lang">
+     <option value="Korea">Korea</option>
+     <option value="English">English</option>
+     <option value="China">China</option>
+     <option value="Japan">Japan</option>
+    </select>
+    <ul class="clearfix">
+     <li><a href="#">Login</a></li>
+     <li><a href="sub/chicLine_join.html" title="click">Join</a></li>
+     <li><a href="#">Order</a></li>
+     <li><a href="#">Cart</a></li>
+     <li>
+      <input type="text" name="search" id="search" placeholder="Search">
+      <a href="#">icon_img</a>
+     </li>
+    </ul>
+   </div>
+  </div> <!-- end of header_top -->
+  
+  <h1><a href="chicLine.html"><img src="images/chicLine/chic_logo.gif" alt="chic-line logo"></a></h1>
+  
+  <nav>
+   <ul class="gnb clearfix">
+    <li>
+     <a href="#">BEST</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">best</a></li>
+      </ul>
+     </div>
+    </li>
+    <li>
+     <a href="#">HANBOK</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">top</a></li>
+       <li><a href="#">bottom</a></li>
+       <li><a href="#">dress</a></li>
+       <li><a href="#">accessory</a></li>
+      </ul>
+     </div>
+    </li>
+    <li>
+     <a href="#">DRESS</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">A-line</a></li>
+       <li><a href="#">H-line</a></li>
+       <li><a href="#">flare</a></li>
+       <li><a href="#">straight</a></li>
+      </ul>
+     </div>
+    </li>
+    <li>
+     <a href="#">BOTTOM</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">skirt</a></li>
+       <li><a href="#">pants</a></li>
+       <li><a href="#">jean</a></li>
+      </ul>
+     </div>
+    </li>
+    <li>
+     <a href="#">ACCESSORY</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">bag</a></li>
+       <li><a href="#">belt</a></li>
+       <li><a href="#">scarf</a></li>
+       <li><a href="#">others</a></li>
+      </ul>
+     </div>
+    </li>
+    <li>
+     <a href="#">SALE</a>
+     <div class="sub">
+      <ul>
+       <li><a href="#">hanbok</a></li>
+       <li><a href="#">dress</a></li>
+       <li><a href="#">bottom</a></li>
+       <li><a class="last" href="#">accessory</a></li>
+      </ul>
+     </div>
+    </li>
+   </ul>
+  </nav>
+ </header>
+ 
+ <hr />
+ 
+ <section>
+  <div class="slides">
+   <ul class="clearfix">
+    <li><a href="#"><img src="images/chicLine/slides1.jpg" alt="시크라인만의 감각적인 생활한복"></a></li>
+    <li><a href="#"><img src="images/chicLine/slides2.jpg" alt="NEW ARRIVAL SALE"></a></li>
+    <li><a href="#"><img src="images/chicLine/slides3.jpg" alt="전 상품 당일출고"></a></li>
+   </ul>
+  </div> <!-- end of slides -->
+  
+  <hr />
+  
+  <div class="best">
+   <h2>WEEKLEY BEST</h2>
+   <ul class="best_tab clearfix">
+    <li id="hanbok" class="on">
+     <h3><a href="#">hanbok</a></h3>
+    </li>
+    <li id="dress">
+     <h3><a href="#">dress</a></h3>
+    </li>
+    <li id="bottom">
+     <h3><a href="#">bottom</a></h3>
+    </li>
+    <li id="acc">
+     <h3><a href="#">accessory</a></h3>
+    </li>
+   </ul>
+   <div class="best_cont">
+    <ol class="hanbok on clearfix">
+     <li class="best_L">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/hanbok_best1.jpg" alt="고우나SK">
+         <figcaption class="content_L">
+           <span>고우나 SK</span>
+           <span>39,800원</span>
+           <p>
+             원단을 아끼지않아 풍성한 허리치마! <br />
+             잘록한 허리가 저절로 생겨요!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/hanbok_best2.jpg" alt="고운매듭 노리개">
+         <figcaption>
+           <span>고운매듭 노리개</span>
+           <span>8,000원</span>
+           <p>
+             많이들 문의주셨던 시크라인표 노리개가 <br />
+             입고 되었습니다~!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/hanbok_best3.jpg" alt="밤하늘 BL">
+         <figcaption>
+           <span>밤하늘 BL</span>
+           <span>33,800원</span>
+           <p>
+             입체적인 실루엣을 살려 제작하였어요. <br />
+             시크라인표 철릭스커트와 찰떡조합!!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/hanbok_best4.jpg" alt="그린나래 OPS">
+         <figcaption>
+           <span>그린나래 OPS</span>
+           <span>48,800원</span>
+           <p>
+             한복의 장점+원피스의 장점! <br />
+             플라워 철릭원피스!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/hanbok_best5.jpg" alt="아침숲 SK">
+         <figcaption>
+           <span>아침숲 SK</span>
+           <span>41,800원</span>
+           <p>
+             봄신상! 싱그러운 아침 숲 같은 주름치마 <br />
+             우아한 꽃무늬로 고급스러운 화사함을 선사해줘요!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+    </ol>
+    <ol class="dress">
+     <li class="best_L">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/dress_best1.jpg" alt="샬롯 OPS">
+         <figcaption>
+           <span>샬롯 OPS</span>
+           <span>44,800원</span>
+           <p>
+             입체감이 느껴지는 레이스로 고급스러운~ <br />
+             고퀄리티의 웰메이드 원피스! 샬롯 원피스~
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/dress_best2.jpg" alt="체리쥬빌레 OPS">
+         <figcaption>
+           <span>체리쥬빌레 OPS</span>
+           <span>42,800원</span>
+           <p>
+             사랑스러운 무드가 가득한 체리패턴과 발랄하고 <br />
+             상큼한 디테일까지! 페미닌한 분위기의 원피스♡
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/dress_best3.jpg" alt="리에나 OPS">
+         <figcaption>
+           <span>리에나 OPS</span>
+           <span>44,800원</span>
+           <p>
+             휴양지룩으로 추천해드리는 랩스타일 원피스! <br />
+             드라마틱한 연출력으로 여신무드 뿜뿜♡ 
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/dress_best4.jpg" alt="유채꽃 OPS">
+         <figcaption>
+           <span>유채꽃 OPS</span>
+           <span>41,800원</span>
+           <p>
+             봄을 닮은듯 플라워프린팅으로 설레이는 원피스 <br />
+             잔잔한 패턴으로 걸리시한 무드로 연출돼요
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/dress_best5.jpg" alt="비엘디 OPS">
+         <figcaption>
+           <span>비엘디 OPS</span>
+           <span>42,800원</span>
+           <p>
+             화사한 컬러감과 하늘하늘한 실루엣이 우아해요♡ <br />
+             데이트룩,휴양지룩으로 추천해드리는 원피스!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+    </ol>
+    <ol class="bottom">
+     <li class="best_L">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/bottom_best1.jpg" alt="아침숲 SK">
+         <figcaption>
+           <span>아침숲 SK</span>
+           <span>41,800원</span>
+           <p>
+             ★봄신상★싱그러운 아침 숲 같은 주름치마♥ <br />
+             우아한 꽃무늬로 고급스러운 화사함을 선사해줘요
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/bottom_best2.jpg" alt="아랑 SK">
+         <figcaption>
+           <span>아랑 SK</span>
+           <span>39,800원</span>
+           <p>
+             봄향기를 닮은듯한 <br />
+             화사하고 은은한 매력의 스커트
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/bottom_best3.jpg" alt="레브론 SK">
+         <figcaption>
+           <span>레브론 SK</span>
+           <span>28,800원</span>
+           <p>
+             엔티크한 감성의 플라워 패턴으로 유니크한~ <br />
+             하이웨스트 디자인으로 다리가 길어보이는 스커트!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/bottom_best4.jpg" alt="퓨어버튼 SK">
+         <figcaption>
+           <span>퓨어버튼 SK</span>
+           <span>31,800원</span>
+           <p>
+             허리 라인을 탄탄히 잡아주는 허리 밴딩 <br />
+             다양한 상의와 매치하기 좋은 플레어 스커트!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/bottom_best5.jpg" alt="와이드 플레어 SK">
+         <figcaption>
+           <span>와이드 플레어 SK</span>
+           <span>32,800원</span>
+           <p>
+             파스텔톤의 컬러와 입체적인 절개 디자인으로 <br />
+             풍성한 핏감을 자랑하는 플레어 스커트!
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+    </ol>
+    <ol class="acc">
+     <li class="best_L">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/acc_best1.jpg" alt="펠가모 BELT">
+         <figcaption>
+           <span>펠가모 BELT</span>
+           <span>18,000원</span>
+           <p>로고장식의 골드버클로 고급스러운 벨트</p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/acc_best2.jpg" alt="배색박스 백">
+         <figcaption>
+           <span>배색박스 백</span>
+           <span>85,000원</span>
+           <p>
+             리얼레더 100% 플랩배색으로 고급스러운 핸드백 <br />
+             오렌지,화이트 2color
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/acc_best3.jpg" alt="엣지리스 BELT">
+         <figcaption>
+           <span>엣지리스 BELT</span>
+           <span>12,000원</span>
+           <p>
+             심플한 듯 고급스러운 포인트!~ <br />
+             완성된 스타일링을 보실 수 있으세요~
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/acc_best4.jpg" alt="진주부케 E">
+         <figcaption>
+           <span>진주부케 E</span>
+           <span>18,000원</span>
+           <p>
+             미니멀한 사이즈의 진주를 다발로 만들어 <br />
+             볼드한 포인트를 준 페미닌 이어링
+           </p>
+         </figcaption>
+       </figure>
+     </li>
+     <li class="best_R">
+       <a href="#">click</a>
+       <figure>
+         <img src="images/chicLine/acc_best5.jpg" alt="골드스퀘어 BELT">
+         <figcaption>
+           <span>골드스퀘어 BELT</span>
+           <span>18,000원</span>
+           <p>골드 로고 장식으로 세련되며 고급스러운 벨트</p>
+         </figcaption>
+       </figure>
+     </li>
+    </ol>
+   </div>
+  </div> <!-- end of best -->
+  
+  <hr />
+  
+  <div id="full_banner"><a href="#"><img src="images/chicLine/full_banner.jpg" alt="only for you"></a></div>
+  
+  <hr />
+  
+  <div class="new">
+   <h2>NEW ARRIVAL 5% D.C</h2>
+   <ul class="clearfix">
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new1.jpg" alt="하론BL">
+       <figcaption>
+         <span>하론BL</span>
+         <span>33,100원</span>
+         <p>
+           프릴 디테일이 여성스러운 분위기를 살려줘요! <br />
+           촤르르 떨어지는 핏감이 매력적인 러블리 블라우스
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new2.jpg" alt="나노SK">
+       <figcaption>
+         <span>나노SK</span>
+         <span>30,200원</span>
+         <p>
+           은은한 색감으로 고급스러운 소재감의 스커트 <br /> 
+           미디 기장으로 안정감있는 착용감을 자랑해요♡
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new3.jpg" alt="타이브로치OPS">
+       <figcaption>
+         <span>타이브로치OPS</span>
+         <span>44,500원</span>
+         <p>
+           클래식한 반 하이넥과 고급스러운 체크패턴 <br /> 
+           슬릿디테일까지 더해져 활동성까지 좋은 아이템
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new4.jpg" alt="골든클래식OPS">
+       <figcaption>
+         <span>골든클래식OPS</span>
+         <span>47,300원</span>
+         <p>
+           투웨이 디자인으로 단품 또는 코트로도 연출가능! <br /> 
+           부드러운 컬러감과 클래식한 무드의 원피스랍니다!
+         </p>
+       </figcaption>
+       </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new5.jpg" alt="아루OPS">
+       <figcaption>
+         <span>아루OPS</span>
+         <span>45,400원</span>
+         <p>
+           베이비한 핑크컬러로 화사하고 러블리한 연출력! <br /> 
+           하늘하늘 가볍게 날리는 쉬폰 소재의 우아한 원피스
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new6.jpg" alt="그루밍SK">
+       <figcaption>
+         <span>그루밍SK</span>
+         <span>30,200원</span>
+         <p>
+           살랑살랑 흩날리는 실루엣이 매력적인 스커트 <br /> 
+           풍성하게 퍼지는 밑단으로 더욱 우아하답니다!
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new7.jpg" alt="하누SK">
+       <figcaption>
+         <span>하누SK</span>
+         <span>31,200원</span>
+         <p>
+           휴양지에 온듯한 청량한 색감이 정말 매력적인! <br /> 
+           가볍고 시원한 재질감의 흩날리는 A라인 스커트
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new8.jpg" alt="키라밍OPS">
+       <figcaption>
+         <span>키라밍OPS</span>
+         <span>46,400원</span>
+         <p>
+           청량감 넘치는 컬러패턴으로 시원해보이는 원피스 <br /> 
+           인생샷OK 바캉스룩으로 강력 추천해드릴게요!
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new9.jpg" alt="블루밍OPS">
+       <figcaption>
+         <span>블루밍OPS</span>
+         <span>42,600원</span>
+         <p>
+           3배색 컬러 조합이 매력적인 원피스♡ 시원하고 <br /> 
+           부드러운 터치감으로 편하게 착용 가능하답니다!
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new10.jpg" alt="로시OPS">
+       <figcaption>
+         <span>로시OPS</span>
+         <span>42,600원</span>
+         <p>
+           다크한 바탕색에 화려한 컬러감의 플라워 패턴이 <br /> 
+           고급스러운 분위기를 만들어 주는 원피스
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new11.jpg" alt="라베르OPS">
+       <figcaption>
+         <span>라베르OPS</span>
+         <span>39,800원</span>
+         <p>
+           백라인의 딥한 브이넥라인으로 청순미와 섹시미를 <br />
+           모두 선사해드릴 여신실루엣 드레스
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+    <li>
+     <a href="#">click</a>
+     <figure>
+       <img src="images/chicLine/new12.jpg" alt="소르베OPS">
+       <figcaption>
+         <span>소르베OPS</span>
+         <span>40,700원</span>
+         <p>
+           차분한 베이지톤의 바디에 <br />
+           유니크한 컬러감의 패턴으로 세련된 원피스에요
+         </p>
+       </figcaption>
+     </figure>
+    </li>
+   </ul>
+  </div> <!-- end of new -->
+  
+  <hr />
+  
+  <div id="sale">
+   <h2><span>TODAY SALE</span></h2>
+   <div class="sale_img">
+    <ul class="clearfix">
+     <li><a href="#"><img src="images/chicLine/sale1.jpg" alt="블루하와이안 BL"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale2.jpg" alt="청월 SK"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale3.jpg" alt="플레르 SK"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale4.jpg" alt="실리 BL"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale5.jpg" alt="트로피칼 철릭 OPS"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale6.jpg" alt="루디브 SK"></a></li>
+     <li><a href="#"><img src="images/chicLine/sale7.jpg" alt="시날래 OPS"></a></li>
+    </ul>
+   </div>
+  </div> <!-- end of sale -->
+ </section>
+ 
+ <hr />
+ 
+ <div class="community">
+  <a href="#" class="side"><img src="images/chicLine/left-arrow.png" alt="left-arrow"></a>
+  <a href="#" class="side2"><img src="images/chicLine/right-arrow.png" alt="right-arrow"></a>
+  <div class="comuni">
+   <h3>COMMUNITY</h3>
+   <ul>
+    <li><a href="#">공지사항</a></li>
+    <li><a href="#">Q&amp;A</a></li>
+    <li><a href="#">Review</a></li>
+    <li><a href="#">Event</a></li>
+    <li><a href="#">Cs</a></li>
+    <li><a href="#">배송조회</a></li>
+    <li><a href="#">교환&#47;반품</a></li>
+    <li>
+     Bank Info
+     <ul class="bank">
+      <li><a href="#">국민 1234-04-123456</a></li>
+      <li><a href="#">농협 123-0123-1234-12</a></li>
+      <li><a href="#">신한 123-030-123456</a></li>
+      <li><a href="#">우리 1234-123-123456</a></li>
+      <li><a href="#">기업 123-1234567-01-012</a></li>
+     </ul>
+    </li>
+    <li class="kakao">
+     <a href="#">
+      <img src="images/chicLine/kakao-talk.png" alt="kakao logo">
+      <span>상담하기</span>
+     </a>
+    </li>
+   </ul>
+  </div>
+ </div> <!-- end of community -->
+ 
+ <hr />
+ 
+ <footer>
+  <div class="foot_main clearfix">
+   <div class="insta">
+    <h3>
+     <a class="clearfix" href="#">
+      <img src="images/chicLine/insta.png" alt="instagram logo">
+      <span>instagram</span>
+     </a>
+    </h3>
+    <ul class="clearfix">
+     <li><a href="#"><img src="images/chicLine/insta1.jpg" alt="insta img1"></a></li>
+     <li><a href="#"><img src="images/chicLine/insta2.jpg" alt="insta img2"></a></li>
+     <li><a href="#"><img src="images/chicLine/insta3.jpg" alt="insta img3"></a></li>
+     <li><a href="#"><img src="images/chicLine/insta4.jpg" alt="insta img4"></a></li>
+     <li><a href="#"><img src="images/chicLine/insta5.jpg" alt="insta img5"></a></li>
+    </ul>
+   </div>
+   <div class="info">
+    <h3>COMPANY INPORMATION</h3>
+    <address>
+     <a href="tel:0212345678">1234-5678</a>
+     Company. 지엔아이컴퍼니<br>
+     Address. 서울특별시 성동구 성수이로10길 14 에이스 하이엔드 성수타워 805호<br>
+     Owner. 채건일<br>
+     Business License. 204-86-28550 [사업자정보확인]<br>
+     Mail Order License. 제2015-서울성동-0971호<br>
+     Personal Information Manager. 채건일<br>
+     이 사이트는 해당 기업과 관련 없음을 알려드립니다.
+    </address>
+   </div>
+  </div>
+  <div class="fnb">
+   <ul>
+    <li><a href="#">회사소개</a></li>
+    <li><a href="#">이용약관</a></li>
+    <li><a href="#">이용안내</a></li>
+    <li><a href="#">개인정보취급방침</a></li>
+    <li><a href="#">협찬/제휴문의</a></li>
+   </ul>
+  </div>
+ </footer>
+</body>
+</html>

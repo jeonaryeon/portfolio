@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import "reset.css";
+
+body{font-size: 12px;}
+a{display: block;}
+fieldset{border: 0;}
+
+.top_banner,header,section,footer{width:1920px;}
+
+/* ------------------------------ header ------------------------------ */
+.top_banner{overflow:hidden; position:relative; height:60px;}
+.top_banner>ul{position:relative; width:1920px; height:180px;}
+.top_banner>ul>li{height:60px;}
+
+/* ------------------------------ header lnb ------------------------------ */
+header>.header_top{
+  width:100%; height:40px; 
+  border-bottom:1px solid #e6ecf0; box-sizing:border-box;
+}
+header>.header_top>.lnb{width:1200px; margin:0 auto;}
+header>.header_top>.lnb>select{float:left; height:20px; margin-top:10px;}
+header>.header_top>.lnb>ul{float:right; height:25px; margin-top:7px;}
+header>.header_top>.lnb>ul>li{float:left; height:25px; line-height:25px;}
+header>.header_top>.lnb>ul>li>a:after{padding:0 10px; content:'|';}
+header>.header_top>.lnb>ul>li:last-child{
+  position:relative; 
+  width:120px; height:23px; 
+  border:1px solid #ccc; border-radius:5px;
+}
+header>.header_top>.lnb>ul>li>input{width:90px; height:20px; padding-left:5px; border: 0;}
+header>.header_top>.lnb>ul>li:last-child>a{
+  position:absolute; right:5px; top:4px; 
+  width:15px; height:15px; 
+  text-indent:-9999px; 
+  background-image:url(../images/chicLine/search.png); background-repeat:no-repeat;
+}
+
+/* ------------------------------ header logo, gnb ------------------------------ */
+header>h1{width:320px; height:73px; margin:30px auto;}
+
+header>nav{
+  width:100%; height:50px; 
+  margin:0 auto; 
+  border-top:1px solid #e6ecf0; border-bottom:2px solid #838e9e; box-sizing:border-box;
+}
+header>nav>.gnb{
+  position:relative; z-index:300; 
+  width:900px; 
+  margin:0 auto;
+}
+header>nav>.gnb>li{float:left; width:150px; height:50px;}
+header>nav>.gnb>li>a{font-size:16px; line-height:50px; text-align:center;}
+header>nav>.gnb>li:hover>a{color:#e6ecf0; background-color:#838e9e;}
+header>nav>.gnb>li>.sub{height:160px; background-color:#fff;}
+header>nav>.gnb>li>.sub>ul>li{width:150px; height:40px;}
+header>nav>.gnb>li>.sub>ul>li>a{font-size:14px; line-height:40px; text-align:center;}
+header>nav>.gnb>li>.sub>ul>li:hover>a{color:#838e9e; background-color:#e6ecf0;}
+
+/* -------------------------------------- JOIN -------------------------------------- */
+
+#membership input[type=text],
+#membership input[type=password]{
+  height:15px; 
+  padding:5px; 
+  font-size:10px;
+  background:#eee; 
+  border:0px; border-radius:3px;
+}
+#membership button[type=button]{
+  margin-left:5px; padding:3px 10px; 
+  color:#666; 
+  font-size:10px; 
+  background:#fff; 
+  border:1px solid #666; border-radius:3px;
+}
+#membership select{
+  margin-right:5px; padding-bottom:5px; 
+  color:#666; 
+  font-size:10px; 
+  background:#fff; 
+  border:1px solid #666; border-radius:3px;
+}
+#mail select{ margin-left:5px; }
+
+
+#membership>h2{margin:30px 0; font-weight:normal; font-size:25px; text-align:center;}
+#membership p{text-align:center;}
+#membership p:first-of-type{margin-bottom:5px; font-size:14px; font-weight:600;}
+#membership p:last-of-type{margin-bottom:15px; color:#555;}
+
+#membership form{width:1000px; margin:0 auto;}
+th,td{width:834px; padding:8px; border-top:1px solid #ddd;}
+tr:last-of-type>td{border-bottom:1px solid #ddd;}
+th{width:150px; border-right:1px solid #ddd;}
+tr:last-of-type>th{border-bottom:1px solid #ddd;}
+
+tr:last-of-type input{margin-top:10px;}
+tr:last-of-type input:first-of-type{margin-top:0px;}
+
+#terms{
+  overflow:hidden;
+  width:1000px; 
+  margin:20px auto; 
+  background:#eee;
+}
+#terms>div{width:950px; margin:20px auto;}
+#terms>.terms_box>h3{font-size:14px; font-weight:600;}
+#terms>.terms_box>h3>span{font-size:12px; font-weight:500;}
+#terms>div>div{ 
+  width:920px; height:150px; 
+  padding:10px; margin:5px 0; 
+  text-align:justify; 
+  background:#fff; 
+  border:1px solid #ccc; overflow:scroll; 
+}
+#terms>.terms_box>p{
+  float:left; 
+  color:#444;
+  font-size:12px; font-weight:500; 
+}
+#terms>div>input{float:right; margin:3px 0 0 5px;}
+#terms>div>label{float:right;}
+#terms>div:last-of-type>h3{clear:left;}
+
+#btn{width:200px; margin:30px auto;}
+#btn>#join{
+  width:200px; height:40px; 
+  color:#fff; 
+  font-size:14px; 
+  background:#838e9e; 
+  border:0;
+}
+
+footer>.fnb{width:100%; height:40px; background-color:#333;}
+footer>.fnb>ul{width:500px; margin:0 auto;}
+footer>.fnb>ul>li{float:left;}
+footer>.fnb>ul>li>a{color:#aaa; line-height:40px; text-align:center;}
+footer>.fnb>ul>li>a:after{padding:0 20px; content:'|';}
+footer>.fnb>ul>li:last-child>a:after{padding-right:0; content:'';}

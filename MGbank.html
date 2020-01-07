@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>새마을금고 개인인터넷뱅킹</title>
+
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/mg_style.css">
+
+  <!-- js 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/mg_script.js"></script>
+
+  <!-- HTML5shiv ie6~8 -->
+  <!--
+    [if lt Ie 9]
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+     alert("현재 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+    </script>
+  -->
+  
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header class="container">
+    <h1><a href="mg.html" class="ir">MG새마을금고</a></h1>
+    <h2><a href="mg.html" class="ir">개인</a></h2>
+    <p>
+      <a href="#" class="login">로그인</a>
+      <a href="#">공인인증센터</a>
+    </p>
+  </header>
+  
+  <hr />
+  
+  <nav id="gnb">
+    <div class="container">
+      <ul class="clearfix">
+        <li>
+          <a href="#">조회</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">계좌조회</a></li>
+              <li><a href="#">이체결과조회</a></li>
+              <li><a href="#">휴면계좌조회</a></li>
+              <li><a href="#">해지계좌조회</a></li>
+              <li><a href="#">자기앞수표조회</a></li>
+              <li><a href="#">장애은행조회</a></li>
+              <li><a href="#">로그인내역조회</a></li>
+              <li><a href="#">과거내역조회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">이체</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">이체</a></li>
+              <li><a href="#">지연이체관리</a></li>
+              <li><a href="#">예약이체</a></li>
+              <li><a href="#">대출금상환</a></li>
+              <li><a href="#">예적금납입</a></li>
+              <li><a href="#">공제료납입</a></li>
+              <li><a href="#">자동이체</a></li>
+              <li><a href="#">이체결과조회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">예적금</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">신규</a></li>
+              <li><a href="#">해지예상조회/해지</a></li>
+              <li><a href="#">거치식예금 건별인출</a></li>
+              <li><a href="#">처리결과조회</a></li>
+              <li><a href="#">회전주기관리</a></li>
+              <li><a href="#">세금우대조회/변경</a></li>
+              <li><a href="#">만기자동이체관리</a></li>
+              <li><a href="#">거래중지계좌해지</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">대출</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">예적금범위내대출신청</a></li>
+              <li><a href="#">대출금지급신청</a></li>
+              <li><a href="#">대출한도감액/해지</a></li>
+              <li><a href="#">예적금해지상환</a></li>
+              <li><a href="#">대출금상환</a></li>
+              <li><a href="#">공제계약대출</a></li>
+              <li><a href="#">대출계약철회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">공제(보험)</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">가입내역조회</a></li>
+              <li><a href="#">자동이체관리</a></li>
+              <li><a href="#">공제료납입</a></li>
+              <li><a href="#">계약대출신청</a></li>
+              <li><a href="#">계약대출상환</a></li>
+              <li><a href="#">청약철회</a></li>
+              <li><a href="#">홈페이지안내</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">세금/공과금</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">일반지로납부</a></li>
+              <li><a href="#">생활요금납부</a></li>
+              <li><a href="#">사회보험료납부</a></li>
+              <li><a href="#">지방세납부</a></li>
+              <li><a href="#">세외수납부</a></li>
+              <li><a href="#">환경개선부담금납부</a></li>
+              <li><a href="#">기타세입금납부</a></li>
+              <li><a href="#">국세/범칙금납부</a></li>
+              <li><a href="#">납부조회/취소</a></li>
+              <li><a href="#">지로자동이체</a></li>
+              <li><a href="#">아파트관리비</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">부가서비스</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">연말정산영수증</a></li>
+              <li><a href="#">통장사본출력</a></li>
+              <li><a href="#">금융알림서비스</a></li>
+              <li><a href="#">MG스마트알림</a></li>
+              <li><a href="#">금융주소한번에</a></li>
+              <li><a href="#">원천징수영수증</a></li>
+              <li><a href="#">현금카드소득공제</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">뱅킹관리</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">계좌관리</a></li>
+              <li><a href="#">보안관리</a></li>
+              <li><a href="#">OTP서비스</a></li>
+              <li><a href="#">사고(분실)신고</a></li>
+              <li><a href="#">개인정보관리</a></li>
+              <li><a href="#">인터넷뱅킹관리</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <hr />
+  
+  <nav id="all_gnb">
+    <div class="container">
+      <h2 class="ir">MG새마을금고</h2>
+      <button class="close ir">close</button>
+      <ul class="clearfix">
+        <li>
+          <a href="#">조회</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">계좌조회</a></li>
+              <li><a href="#">이체결과조회</a></li>
+              <li><a href="#">휴면계좌조회</a></li>
+              <li><a href="#">해지계좌조회</a></li>
+              <li><a href="#">자기앞수표조회</a></li>
+              <li><a href="#">장애은행조회</a></li>
+              <li><a href="#">로그인내역조회</a></li>
+              <li><a href="#">과거내역조회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">이체</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">이체</a></li>
+              <li><a href="#">지연이체관리</a></li>
+              <li><a href="#">예약이체</a></li>
+              <li><a href="#">대출금상환</a></li>
+              <li><a href="#">예적금납입</a></li>
+              <li><a href="#">공제료납입</a></li>
+              <li><a href="#">자동이체</a></li>
+              <li><a href="#">이체결과조회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">예적금</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">신규</a></li>
+              <li><a href="#">해지예상조회/해지</a></li>
+              <li><a href="#">거치식예금 건별인출</a></li>
+              <li><a href="#">처리결과조회</a></li>
+              <li><a href="#">회전주기관리</a></li>
+              <li><a href="#">세금우대조회/변경</a></li>
+              <li><a href="#">만기자동이체관리</a></li>
+              <li><a href="#">거래중지계좌해지</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">대출</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">예적금범위내대출신청</a></li>
+              <li><a href="#">대출금지급신청</a></li>
+              <li><a href="#">대출한도감액/해지</a></li>
+              <li><a href="#">예적금해지상환</a></li>
+              <li><a href="#">대출금상환</a></li>
+              <li><a href="#">공제계약대출</a></li>
+              <li><a href="#">대출계약철회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">공제(보험)</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">가입내역조회</a></li>
+              <li><a href="#">자동이체관리</a></li>
+              <li><a href="#">공제료납입</a></li>
+              <li><a href="#">계약대출신청</a></li>
+              <li><a href="#">계약대출상환</a></li>
+              <li><a href="#">청약철회</a></li>
+              <li><a href="#">홈페이지안내</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">세금/공과금</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">일반지로납부</a></li>
+              <li><a href="#">생활요금납부</a></li>
+              <li><a href="#">사회보험료납부</a></li>
+              <li><a href="#">지방세납부</a></li>
+              <li><a href="#">세외수납부</a></li>
+              <li><a href="#">환경개선부담금납부</a></li>
+              <li><a href="#">기타세입금납부</a></li>
+              <li><a href="#">국세/범칙금납부</a></li>
+              <li><a href="#">납부조회/취소</a></li>
+              <li><a href="#">지로자동이체</a></li>
+              <li><a href="#">아파트관리비</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">부가서비스</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">연말정산영수증</a></li>
+              <li><a href="#">통장사본출력</a></li>
+              <li><a href="#">금융알림서비스</a></li>
+              <li><a href="#">MG스마트알림</a></li>
+              <li><a href="#">금융주소한번에</a></li>
+              <li><a href="#">원천징수영수증</a></li>
+              <li><a href="#">현금카드소득공제</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">뱅킹관리</a>
+          <div class="all_sub">
+            <ul>
+              <li><a href="#">계좌관리</a></li>
+              <li><a href="#">보안관리</a></li>
+              <li><a href="#">OTP서비스</a></li>
+              <li><a href="#">사고(분실)신고</a></li>
+              <li><a href="#">개인정보관리</a></li>
+              <li><a href="#">인터넷뱅킹관리</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <hr />
+  
+  <aside>
+    <ul>
+      <li class="all_menu">
+        <span class="ir">전체메뉴</span>전체메뉴
+      </li>
+      <li>
+        <a href="#"><span class="ir">MG체크카드</span>MG체크카드</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">고객센터</span>고객센터</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">보안프로그램</span>보안프로그램</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">영업점</span>영업점</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">이용안내</span>이용안내</a>
+      </li>
+      <li class="top">
+        <span class="ir">TOP</span> TOP
+      </li>
+    </ul>
+  </aside>
+  
+  <hr />
+  
+  <section id="banner">
+    <h2 class="readonly">새마을금고 메인 슬라이드 배너</h2>
+    <div class="container">
+      <div class="slides">
+        <img src="images/mg/banner1.png" alt="결제 수단을 간편하게! MG상상페이로 결제하세요." title="MG상상페이로 결제하세요.">
+        <img src="images/mg/banner2.png" alt="편리한 스마트 금융 MG스마트 알림" title="MG스마트 알림">
+        <img src="images/mg/banner3.png" alt="새마을금고 스마트출금 서비스" title="스마트 출금 서비스">
+      </div>
+      <div class="indicator">
+        <button class="ir btn on">button1</button>
+        <button class="ir btn">button2</button>
+        <button class="ir btn">button3</button>
+        <button>
+          <img src="images/mg/pause.png" alt="stop icon" class="stop">
+          <img src="images/mg/play.png" alt="play icon" class="play">
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <section id="guide" class="container">
+    <h2 class="readonly">바로가기</h2>
+    <ul class="clearfix">
+      <li>
+        <a href="#"><span class="ir">빠른조회</span>빠른조회</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">스마트뱅킹가입</span>스마트뱅킹가입</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">전자금융안내</span>전자금융안내</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">금융상품안내</span>금융상품안내</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">사고신고</span>사고신고</a>
+      </li>
+      <li>
+        <a href="#"><span class="ir">전예금조회</span>전예금조회</a>
+      </li>
+    </ul>
+  </section>
+  
+  <hr />
+  
+  <section id="security" class="container clearfix">
+    <h2 class="readonly">서비스 및 보안 안내</h2>
+    <div>
+      <h3>MG 상상뱅크 <br /> 서비스 안내</h3>
+      <p>
+        간편송금, 간편출금, 환전, 비대면계좌개설 모바일 전용상품 가입 등의 서비스를 이용할 수 있는 새마을금고 모바일 창구 입니다.
+      </p>
+      <button class="ir">more</button>
+    </div>
+    <div>
+      <h3>보안카드번호 <br /> 전체 입력·촬영 절대 금지</h3>
+      <p>
+        보안상의 이유로 금융거래정보, OTP번호 입력, 보안카드번호 전체·일부(2개 초과)를 요구하는 경우, 보안카드 촬영/스캔을 요구하는 경우는 금융사기이오니 절대 입력하지 마십시오.
+      </p>
+      <button class="ir">more</button>
+    </div>
+    <div>
+      <h3>인터넷뱅킹 <br /> 보안프로그램 안내</h3>
+      <p>
+        안전한 금융거래와 사용자 편의성 향상을 위하여 새로운 보안프로그램이 적용됩니다. 설치 안내에 따라 재설치하시기 바랍니다.
+      </p>
+      <button class="ir">more</button>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <section id="info" class="container clearfix">
+    <h2 class="readonly">공지사항 및 질문</h2>
+    <article class="notice">
+      <h3>공지사항<a href="#">더보기</a></h3>
+      <table>
+        <caption>공지사항</caption>
+        <tbody>
+          <tr>
+            <th><a href="#">햇살론 근로자 대환자금 취급 중단 안내</a></th>
+            <td>2019.09.27</td>
+          </tr>
+          <tr>
+            <th><a href="#">금융결제원 금융공동망시스템 교체 관련 안내</a></th>
+            <td>2019.09.16</td>
+          </tr>
+          <tr>
+            <th><a href="#">행정안전부 위택스 관련 업무 일시중단 안내</a></th>
+            <td>2019.08.12</td>
+          </tr>
+          <tr>
+            <th><a href="#">신한금융투자 대외 연계 업무 일시중단 안내</a></th>
+            <td>2019.07.30</td>
+          </tr>
+          <tr>
+            <th><a href="#">보안카드 검증오류 정상복구 안내</a></th>
+            <td>2019.07.11</td>
+          </tr>
+        </tbody>
+      </table>
+    </article> <!-- end of .notice -->
+    
+    <article class="faq">
+      <h3>자주하는 질문<a href="#">더보기</a></h3>
+      <table>
+        <caption>공지사항</caption>
+        <tbody>
+          <tr>
+            <td>No . 448</td>
+            <th><a href="#">새마을금고 영업점의 위치를 알 수 있는 방법은 없나요?</a></th>
+          </tr>
+          <tr>
+            <td>No . 447</td>
+            <th><a href="#">새마을금고 회원으로 출자하면 배당도 되나요?</a></th>
+          </tr>
+          <tr>
+            <td>No . 446</td>
+            <th><a href="#">출자금은 어떻게 거래하나요?</a></th>
+          </tr>
+          <tr>
+            <td>No . 445</td>
+            <th><a href="#">주류카드를 분실했는데 어떻게 해야하나요?</a></th>
+          </tr>
+          <tr>
+            <td>No . 444</td>
+            <th><a href="#">주류카드 이용한도 변경이 가능한가요?</a></th>
+          </tr>
+        </tbody>
+      </table>
+    </article> <!-- end of .faq -->
+  </section>
+  
+  <hr />
+  
+  <section id="call">
+    <h2 class="readonly">고객상담</h2>
+    <div class="container">
+      <article class="consult clearfix">
+        <span><img src="images/mg/callcenter.png" alt="햇살론 대출사기 아이콘"></span>
+        <div>
+          <h3>고객상담</h3>
+          <p>
+            <span>
+              국내 : 1234-0000 , 0000-0000 / 국외 : +82-2-1234-1234 <br />
+              공제문의 : 1599-0000 / 보이스피싱 금융사고 : 080-000-0201 <br />
+            </span>
+              상담신청 : 09:00~18:00 (휴무일 제외) <br /> 
+              사고신고 24시간 연중무휴 접수 
+          </p>
+        </div>
+      </article>
+      <article class="loan">
+        <h3>햇살론 대출사기 주의</h3>
+        <p>
+          <span>
+            햇살론 <strong>보이스피싱</strong>이 <strong>의심</strong>되면 바로 국번없이 <br />
+          </span>
+          1332(금융감독원) <br />
+          1397(서민금융통합센터)
+        </p>
+      </article>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <footer>
+    <div class="container">
+      <h2 class="ir">새마을금고 풋터 로고</h2>
+      <div id="fnb">
+        <ul class="clearfix">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">이용시간</a></li>
+          <li><a href="#">자주하는 질문(FAQ)</a></li>
+          <li><a href="#">위치검색</a></li>
+          <li><a href="#">신용정보조회</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </div>
+      <div class="fs">
+        <h3>FAMILY SITE<span class="ir">down</span></h3>
+        <ul>
+          <li><a href="#">새마을금고 부동산</a></li>
+          <li><a href="#">MG인재개발원</a></li>
+          <li><a href="#">새마을금고연수원(제주)</a></li>
+          <li><a href="#">새마을금고 복지회</a></li>
+          <li><a href="#">복지회 쇼핑몰</a></li>
+        </ul>
+      </div>
+      <div class="other">
+        <span><img src="images/mg/ico_define.gif" alt=""></span>
+        <span><img src="images/mg/ico_verisign.gif" alt=""></span>
+        <span><img src="images/mg/ico_w3c.gif" alt=""></span>
+        <span><img src="images/mg/ico_webwatch.png" alt=""></span>
+      </div>
+      <address>
+        본 페이지는 개인 포트폴리오용으로 해당 기업과는 무관합니다. <br />
+        COPYRIGHT © RENEWAL DESIGNED BY JEON A RYEON
+      </address>
+    </div>
+  </footer>
+</body>
+</html>

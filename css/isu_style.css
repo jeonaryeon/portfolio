@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/* -------------------------- 공통 -------------------------- */
+html,body{height: 100%;}
+
+section, footer{position: relative; top: -80px; z-index: 200; width: 100%;}
+.container{
+  position: relative; 
+  width: 1440px; height: 100%; 
+  margin: 0 auto;
+}
+.icon{
+  display: inline-block;
+  text-indent: -9999px;
+  background-image: url(../images/isu/icon.png); background-repeat: no-repeat;
+}
+
+/* 글씨 */
+h2{font-weight: 500; font-size: 2.5em; text-align: center;}
+h3{font-weight: 500; font-size: 1.5em;}
+p, strong{font-size: 1.4em; text-align: center;}
+figcaption{font-size: 1.2em; text-align: center;}
+footer p,address{font-size: 1.1em;}
+
+
+/* nav 공통 */
+nav .line{
+  display: block;
+  position: absolute; left: 0; bottom: 8px;
+  width: 100%; height: 2px;
+  background-color: #0090d6;
+  opacity: 0;
+  transition:left 0.3s;
+}
+
+/* section 공통 */
+section{padding: 50px 0;}
+section p{margin: 15px 0 30px;}
+
+/* -------------------------- header -------------------------- */
+header{
+  position: relative; z-index: 500;
+  width: 100%; height: 80px;
+}
+  h1{padding-top: 15px;}
+  h1>a>img{width: 160px;}
+  .tnb{
+    position: absolute; right: 5px; top: 5px;
+    width: 100%; height: 35px;
+  }
+  .tnb>.container>p{
+    float: right;
+    margin-left: 30px;
+    color: #ccc;
+    font-size: 0.8em;
+    line-height: 35px;
+  }
+
+/* #gnb_b */
+#gnb_b{position: absolute; right: 0; top: 35px; z-index: 400;}
+#gnb_b .line{left: -25%; bottom: -3px; width: 150%;}
+#gnb_b>ul>li{
+  float: left;
+  height: 45px;
+  margin-left: 40px;
+  text-align: center;
+}
+#gnb_b>ul>li>a{
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  line-height: 45px;
+}
+#gnb_b .sub{position: relative; top: -900px;}
+#gnb_b .sub>ul>li>a{
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.gnb_bBg{
+  position: absolute; left: 0; top: -320px; z-index: 300;
+  width: 100%; height: 205px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+/* -------------------------- #gnb_s -------------------------- */
+#gnb_s{
+  display: none;
+  overflow: auto;
+  position: fixed; right: -70%; top: 0; z-index: 800;
+  width: 70%; height: 100%;
+  background-color: #fff;
+}
+#gnb_s>ul{
+  position: absolute; right: 0; top: 60px;
+  width: 100%;
+}
+#gnb_s>ul>li{padding: 0 20px;}
+#gnb_s>ul>li>a{
+  display: block;
+  position: relative;
+  color: #333;
+  font-size: 15px;
+  line-height: 60px;
+  text-indent: 20px;
+}
+#gnb_s .down{
+  position: absolute; right: 20px; top: 23px;
+  transform: rotate(0);
+  width: 24px; height: 24px;
+  background-position: -50px 0;
+}
+#gnb_s .sub{
+  display: none;
+  background-color: #eee;
+}
+#gnb_s .sub>ul>li>a{
+  padding-left: 30px;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.gnb_sBg{
+  display: none;
+  position: fixed; left: 0; top: 0; z-index: 700;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* .hamBtn & .close */
+.hamBtn, .close{
+  display: none; 
+  position: absolute;
+}
+.hamBtn{
+  right: 0; top: 17px; 
+  width: 24px; height: 24px; 
+  background-position: 0 0;
+}
+.close{
+  right: 25px; top: 20px; 
+  width: 21px; height: 21px; 
+  background-position: -27px -1px;
+}
+
+  /* nav 부분 hover & 가상클래스 */
+    #gnb_b>ul>li>a.on{color: #333;}
+
+    nav>ul>li.on>a>.line,
+    nav>ul>li:hover>a>.line{opacity: 1;}
+
+    #gnb_b>ul>li:hover>a,
+    #gnb_s>ul>li.on>a,
+    #gnb_s>ul>li:hover>a{color: #0090d6;}
+
+    nav .sub>ul>li>a:hover{color: #99ca3b;}
+
+    #gnb_b .sub.on{top: 10px;}
+    #gnb_s .down.up{background-position: -92px 0;}
+
+    .gnb_bBg.on{top: 80px;}
+
+
+/* -------------------------- footer -------------------------- */
+footer{z-index: 600;}
+#fnb{
+  width: 100%;
+  background-color: #ccc;
+}
+#fnb>div>ul>li{
+  float: left; 
+  height: 40px; 
+  margin-right: 30px;
+}
+#fnb>div>ul>li>a{color: #555; line-height: 40px;}
+#fnb .company{float: right; margin-right: 0;}
+#fnb .company>a{display: inline-block; position: relative;}
+
+  .company_li{
+    display: none;
+    position: fixed; left: 0; top: 0; z-index: 600;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  .company_li>div{
+    position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    padding: 20px 30px;
+    background-color: #ccc;
+  }
+  .company_li>div>h2{
+    position: absolute; left: 0; top: -60px;
+    color: #fff;
+  }
+  .company_li>div>ul>li{
+    float: left;
+    width: 31.33%;
+    margin: 10px 0; padding: 10px 0;
+    background-color: #fff;
+  }
+  .company_li>div>ul>li:nth-child(3n-1){margin: 10px 3%;}
+  .company_li>div>ul>li>a{
+    display: block;
+    line-height: 34px;
+    text-align: center;
+  }
+  .company_li>div>ul>li>a>span{
+    display: inline-block;
+    width: 41px; height: 34px;
+    margin-right: 15px;
+  }
+  .company_li>div>.close2{
+    position: absolute; right: 0; bottom: -35px;
+    width: 24px; height: 24px;
+    background-position: -26px -24px;
+  }
+
+.footer_main{
+  position: relative; z-index: 500;
+  width: 100%; height: 100px;
+  color: #777;
+  background-color: #eee;
+}
+.footer_main h2{
+  width: 62px; height: 54px;
+  padding-top: 23px;
+}
+.footer_main .cont{
+  margin-top: -50px;
+  text-align: center;
+}
+.footer_main .cont>p>a{margin-right: 10px; color: #777;}
+.footer_main .cont>p>span{margin-left: 10px;}
+
+
+/* -------------------------- 서브페이지 공통 -------------------------- */
+.sub_banner{
+  width: 100%; height: 40%; padding: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sub_banner h2{
+  position: absolute; left: 0; bottom: 15%;
+  color: rgba(255,255,255,0.7);
+  font-size: 3em;
+}
+.sub_banner p{
+  position: absolute; left: 0; bottom: 0;
+  color: rgba(255,255,255,0.7);
+}
+.sub_banner p>strong{color: #99ca3b; font-size: 1em;}
+
+#sub_menu{
+  position: relative; top: -80px; z-index: 400;
+  width: 100%;
+  background-color: #0090d6;
+}
+#sub_menu>div>ul>li{
+  float: left;
+  height: 50px;
+  color: rgba(255,255,255,0.8);
+  line-height: 50px;
+  border-right: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+#sub_menu>div>ul>li:first-child{border-left: 1px solid rgba(255,255,255,0.3);}
+#sub_menu>div>ul>li>a{
+  margin: 0 30px; 
+  color: rgba(255,255,255,0.8);
+  font-size: 1.2em;
+}
+#sub_menu>div>ul>li>a.icon{
+  width: 24px; height: 24px;
+  margin: 0 30px;
+  margin-top: 16px; background-position: -118px 0;
+}
+
+#sub_menu i{
+  margin-left: 30px;
+  font-size: 1.2em;
+}
+#sub_menu .sub_tab>a{color: #fff; font-weight: 700;}
+#sub_menu ul>li>ul{
+  display: none;
+  margin-top: 1px; padding-left: 30px;
+  background-color: #eee;
+}
+#sub_menu ul>li>ul>li>a{font-size: 1.1em;}
+
+
+/* -------------------------- 서브 배너 부분 -------------------------- */
+#customer_banner{background-image: url(../images/isu/customer_bg.jpg);}
+
+
+
+/* -------------------------- mediaQuery -------------------------- */
+/* 1280px ~ 1439px */
+@media screen and (max-width:1439px){
+  .container{width: 95%;}
+  .company_li>ul{padding: 20px 40px;}
+} /* end of 1439px */
+
+
+/* 1025px ~ 1279px */
+@media screen and (max-width:1279px){
+  body{font-size: 13.5px;}
+  
+  /* footer */
+  .company_li>div>ul>li{width: 47.5%;}
+  .company_li>div>ul>li:nth-child(3n-1){margin: 10px 0;}
+  .company_li>div>ul>li:nth-child(even){margin: 10px 0 10px 5%;}
+} /* end of 1279px */
+
+
+/* 961px ~ 1024px */
+@media screen and (max-width:1024px){
+  body{font-size: 13px;}
+  section,footer{top: -60px;}
+  
+  /* header */
+  header{height: 60px;}
+    h1{padding-top: 12px;}
+    h1>a>img{width: 120px;}
+  #gnb_b, .tnb{display: none;}
+  #gnb_s, .hamBtn, .close{display: block;}
+  
+  /* footer */
+  .footer_main{height: 170px;}
+  .footer_main h2{margin: 0 auto; padding-left: 0;}
+  .footer_main .cont{margin-top: 20px;}
+
+  /* #sub_menu */
+  #sub_menu{top: -60px;}
+  #sub_menu>div>ul>li{height: 45px; line-height: 45px;}
+  #sub_menu>div>ul>li>a.icon{margin-top: 13px;}
+} /* end of 1024px */
+
+
+/* 769px ~ 960px */
+@media screen and (max-width:960px){
+  body{font-size: 12px;}
+} /* end of 960px */
+
+
+/* 601px ~ 768px */
+@media screen and (max-width:768px){
+  body{font-size: 11px;}
+  
+  /* footer */
+  .company_li>div{height: 50%;}
+  .company_li>div>h2{top: -45px;}
+  .company_li>div>ul{
+    overflow: scroll;
+    -ms-overflow-style: none;
+    height: 100%;
+  }
+  .company_li>div>ul::-webkit-scrollbar{display: none;}
+  .company_li>div>ul>li{width: 100%;}
+  .company_li>div>ul>li:nth-child(even){margin: 5px 0;}
+  
+  .footer_main{height: 200px;}
+  .footer_main .cont>p>span{display: block; margin-left: 0;}
+} /* end of 768px */
+
+
+/* 481px ~ 600px */
+@media screen and (max-width:600px){
+  body{font-size: 8px;}
+  section,footer{top: -40px;}
+  section{padding: 20px 0;}
+  
+  /* header */
+  header{height: 40px;}
+    h1{padding-top: 10px;}
+    h1>a>img{width: 80px;}
+  .hamBtn{top: 8px;}
+  
+  #gnb_s>ul>li{padding: 0 10px;}
+  #gnb_s>ul>li>a{font-size: 14px; line-height: 45px;}
+  #gnb_s .down{
+    top: 18px;
+    width: 16px; height: 16px;
+    background-position: -56px -77px;
+  }
+  #gnb_s .down.up{background-position: -98px -77px;}
+  
+  /* footer */
+  #fnb>div>ul>li{margin-right: 15px;}
+  
+  
+  /* #sub_menu */
+  #sub_menu{top: -40px;}
+  #sub_menu>div>ul>li{height: 35px; line-height: 35px;}
+  #sub_menu>div>ul>li>a{margin: 0 20px;}
+  #sub_menu>div>ul>li>a.icon{
+    width: 18px; height: 14px;
+    margin: 10px 20px 0;
+    background-position: -121px -29px;
+  }
+  #sub_menu i{margin-left: 20px;}
+  #sub_menu ul>li>ul{padding-left: 20px;}
+  #sub_menu ul>li>ul>li{height: 30px; line-height: 30px;}
+} /* end of 600px */
