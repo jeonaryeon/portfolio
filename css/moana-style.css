@@ -70,12 +70,12 @@ header{
 /* -------------------------- #intro -------------------------- */
 #intro{
   position: relative;
-  background-image: url(../images/moana/intro_bg.jpg);
+  background-image: url(../images/moana/intro_bg2.jpg);
   background-repeat: no-repeat;
 }
 #intro>h1{
   width: 300px; height: 138px;
-  margin: 60px 0 0 60px;
+  margin: 80px 0 0 80px;
   background-image: url(../images/moana/logo.png);
 }
 #intro>button{
@@ -87,19 +87,40 @@ header{
 }
 #intro>span{position: absolute;}
 #intro>.water1{
-  left: 400px; bottom: -150px;
-  width: 1137px; height: 959px;
-  background-image: url(../images/moana/water1.png);
+  right: 0; bottom: -150px;
+  width: 1474px; height: 1080px;
+  background-image: url(../images/moana/water1-1.png);
 }
 #intro>.water2{
-  left: 80px; bottom: -180px;
-  width: 1543px; height: 1161px;
-  background-image: url(../images/moana/water2.png);
+  right: 50px; bottom: 0;
+  width: 1534px; height: 1067px;
+  background-image: url(../images/moana/water2-1.png);
 }
 
 
 /* -------------------------- #about -------------------------- */
 #about{}
+#about>div>div{
+  position: absolute; top: 50%; 
+  transform: translateY(-50%);
+}
+.preview{
+  left: 0; 
+  width: 847px; height: 477px;
+}
+.preview>iframe{width: 100%; height: 100%;}
+
+.info{
+  right: 0;
+  width: 543px;
+  color: #fff;
+}
+.info>h3{font-size: 30px;}
+.info>p{line-height: 2;}
+.info>p>strong{display: block; font-size: 18px;}
+.info>p>strong:first-child{margin-bottom: 20px;}
+.info>p>strong:nth-child(2){margin-top: 20px; margin-bottom: 10px;}
+.info>p>strong:last-child{margin-top: 40px;}
 
 
 /* -------------------------- #character -------------------------- */
@@ -113,15 +134,19 @@ header{
     transform: translateY(-50%);
     width: 100%;
   }
-#photo_s{
+#photo{
   overflow: hidden;
   position: absolute; left: 260px; bottom: 2%;
   width: 920px; height: 120px;
 }
-#photo_s>ul{
+#photo_s{
   overflow: hidden;
   position: absolute; left: 60px; top: 0;
   width: 800px;
+}
+#photo_s>ul{
+  position: relative;
+  width: 2240px;
 }
 #photo_s>ul>li{
   overflow: hidden;
@@ -130,18 +155,23 @@ header{
   width: 120px; height: 120px;
   margin: 0 20px;
   border-radius: 50%;
+  cursor: pointer;
 }
 #photo_s>ul>li:hover,
-#photo_s>ul>li.on{transform: scale(1);}
+#photo_s>ul>li.on{
+  transform: scale(1);
+  border: 3px solid #fff; 
+  box-sizing: border-box;
+}
 
-#photo_s>button{
+#photo>button{
   position: absolute; top: 50%;
   transform: translateY(-50%);
   width: 36px; height: 33px;
   background-image: url(../images/moana/icon.png);
 }
-#photo_s>.left{left: 0; background-position: -34px -68px;}
-#photo_s>.right{right: 0; background-position: -71px -68px;}
+#photo>.left{left: 0; background-position: -34px -68px;}
+#photo>.right{display: none; right: 0; background-position: -71px -68px;}
 
 
 /* -------------------------- #production -------------------------- */
@@ -149,4 +179,9 @@ header{
 
 
 /* -------------------------- footer -------------------------- */
+footer{position: relative; top: -50px;}
+footer>address{
+  color: #ccc;
+  text-align: center;
+}
 
