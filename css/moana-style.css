@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* -------------------------- keyframes -------------------------- */
+@keyframes ani{
+  0%{bottom: 65px;}
+  100%{bottom: 50px;}
+}
+
+
+/* -------------------------- 공통 -------------------------- */
+html,body{height: 100%; background-color: #0d294f;}
+section{width: 100%; height: 100%;}
+
+.container{
+  position: relative; 
+  width: 1440px;
+  margin: 0 auto;
+}
+.ir{
+  display: inline-block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+}
+
+
+/* -------------------------- header -------------------------- */
+header{
+  position: fixed; left: 50%; top: 80px; z-index: 1000;
+  transform: translateX(-50%);
+  width: 1440px;
+  opacity: 0;
+}
+#gnb{
+  display: flex;
+  justify-content: space-around;
+}
+#gnb>li{
+  height: 40px;
+  margin-top: 4px;
+  background-image: url(../images/moana/font.png);
+  cursor: pointer;
+}
+
+#gnb>.menu1{width: 150px;}
+#gnb>.menu2{width: 162px; background-position: -158px 0;}
+#gnb>.menu3{width: 244px; background-position: -328px 0;}
+#gnb>.menu4{width: 209px; background-position: -584px 0;}
+#gnb>.menu5{width: 271px; background-position: -801px 0;}
+
+#gnb>li:hover,#gnb>li.on{margin-top: 0;}
+#gnb>.menu1:hover,
+#gnb>.menu1.on{background-position: 0 -41px;}
+
+#gnb>.menu2:hover,
+#gnb>.menu2.on{background-position: -158px -41px;}
+
+#gnb>.menu3:hover,
+#gnb>.menu3.on{background-position: -328px -41px;}
+
+#gnb>.menu4:hover,
+#gnb>.menu4.on{background-position: -584px -41px;}
+
+#gnb>.menu5:hover,
+#gnb>.menu5.on{background-position: -801px -41px;}
+
+
+/* -------------------------- #intro -------------------------- */
+#intro{
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/moana/intro_bg.jpg);
+  background-repeat: no-repeat;
+}
+#intro>h1{
+  width: 300px; height: 138px;
+  margin: 60px 0 0 60px;
+  background-image: url(../images/moana/logo.png);
+}
+#intro>button{
+  position: absolute; left: 50%; bottom: 65px;
+  transform: translateX(-50%);
+  width: 46px; height: 65px;
+  background-image: url(../images/moana/icon.png);
+  animation: ani 0.4s alternate infinite;
+}
+#intro>span{position: absolute;}
+#intro>.water1{
+  left: 400px; bottom: -150px;
+  width: 1137px; height: 959px;
+  background-image: url(../images/moana/water1.png);
+}
+#intro>.water2{
+  left: 80px; bottom: -180px;
+  width: 1543px; height: 1161px;
+  background-image: url(../images/moana/water2.png);
+}
+
+
+/* -------------------------- #about -------------------------- */
+#about{}
+
+
+/* -------------------------- #character -------------------------- */
+#character{}
+
+
+/* -------------------------- #still-cut -------------------------- */
+#still-cut{}
+
+
+/* -------------------------- #production -------------------------- */
+#production{}
+
+
+/* -------------------------- footer -------------------------- */
+
