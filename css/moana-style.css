@@ -9,9 +9,12 @@
 
 /* -------------------------- 공통 -------------------------- */
 html,body{height: 100%; background-color: #0d294f;}
+article{}
 section{
   overflow: hidden;
   width: 100%; height: 100%;
+  font-size: 16px;
+  line-height: 2;
 }
 
 .container{
@@ -99,32 +102,94 @@ header{
 
 
 /* -------------------------- #about -------------------------- */
-#about{}
 #about>div>div{
   position: absolute; top: 50%; 
   transform: translateY(-50%);
 }
-.preview{
-  left: 0; 
-  width: 847px; height: 477px;
-}
-.preview>iframe{width: 100%; height: 100%;}
+  .preview{
+    left: 0; 
+    width: 830px; height: 460px;
+  }
+  .preview>iframe{width: 100%; height: 100%;}
 
-.info{
-  right: 0;
-  width: 543px;
-  color: #fff;
-}
-.info>h3{font-size: 30px;}
-.info>p{line-height: 2;}
-.info>p>strong{display: block; font-size: 18px;}
-.info>p>strong:first-child{margin-bottom: 20px;}
-.info>p>strong:nth-child(2){margin-top: 20px; margin-bottom: 10px;}
-.info>p>strong:last-child{margin-top: 40px;}
+  .info{
+    right: 0;
+    width: 560px;
+    color: #fff;
+  }
+  .info>h3{font-size: 30px;}
+  .info>p>strong{display: block; font-size: 18px;}
+  .info>p>strong:first-child{margin-top: -10px; margin-bottom: 15px;}
+  .info>p>strong:nth-child(2){margin-top: 15px; margin-bottom: 5px;}
+  .info>p>strong:last-child{margin-top: 30px;}
 
 
 /* -------------------------- #character -------------------------- */
-#character{background-color: #9fc1dd;}
+#character{position: relative; background-color: #9fc1dd;}
+#character>div{
+  overflow: hidden;
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%,-50%);
+  height: 700px;
+}
+
+  /* #c_main */
+  #c_main{position: relative;}
+  #c_main>figure{
+    position: absolute; top: 150px; left: 0;
+    width: 100%; height: 100%;
+    opacity: 0;
+  }
+  #c_main>.cont1{top: 0; opacity: 1;}
+
+  #c_main>figure>img{width: 680px;}
+  #c_main>figure>figcaption{
+    position: absolute; top: 180px; right: 0;
+    width: 700px;
+    text-align: justify;
+  }
+  #c_main>.cont1>figcaption{top: 100px;}
+
+  #c_main>figure>figcaption>span{
+    display: block;
+    height: 55px;
+    margin-bottom: 50px;
+    background-image: url(../images/moana/font.png);
+  }
+  #c_main .cont1 span{width: 258px; background-position: 0 -86px;}
+  #c_main .cont2 span{width: 200px; background-position: -266px -86px;}
+  #c_main .cont3 span{width: 234px; background-position: -474px -86px;}
+  #c_main .cont4 span{width: 204px; background-position: -717px -86px;}
+  #c_main .cont5 span{width: 189px; background-position: 0 -142px;}
+  #c_main .cont6 span{width: 380px; background-position: -198px -142px;}
+  #c_main .cont7 span{width: 369px; background-position: -587px -142px;}
+  #c_main .cont8 span{width: 317px; background-position: 0 -205px;}
+
+  /* #c_list */
+  #c_list{
+    position: absolute; right: 0; bottom: 100px;
+    width: 700px; height: 120px;
+  }
+  #c_list>.list{
+    overflow: hidden;
+    position: relative; left: 30px;
+    width: 640px;
+  }
+  #c_list>.list>ul{position: relative; width: 1280px;}
+  #c_list>.list>ul>li{
+    float: left;
+    width: 120px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  #c_list>button{
+    position: absolute; top: 43px;
+    width: 16px; height: 34px;
+    background-image: url(../images/moana/icon.png);
+  }
+  #c_list>.left{left: 0; background-position: 0 -67px;}
+  #c_list>.right{display: none; right: 0; background-position: -18px -67px;}
 
 
 /* -------------------------- #still-cut -------------------------- */
@@ -134,48 +199,86 @@ header{
     transform: translateY(-50%);
     width: 100%;
   }
-#photo{
-  overflow: hidden;
-  position: absolute; left: 260px; bottom: 2%;
-  width: 920px; height: 120px;
-}
-#photo_s{
-  overflow: hidden;
-  position: absolute; left: 60px; top: 0;
-  width: 800px;
-}
-#photo_s>ul{
-  position: relative;
-  width: 2240px;
-}
-#photo_s>ul>li{
-  overflow: hidden;
-  float: left;
-  transform: scale(0.9);
-  width: 120px; height: 120px;
-  margin: 0 20px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-#photo_s>ul>li:hover,
-#photo_s>ul>li.on{
-  transform: scale(1);
-  border: 3px solid #fff; 
-  box-sizing: border-box;
-}
+  #photo{
+    overflow: hidden;
+    position: absolute; left: 260px; bottom: 2%;
+    width: 920px; height: 120px;
+  }
+    #photo_s{
+      overflow: hidden;
+      position: absolute; left: 60px; top: 0;
+      width: 800px;
+    }
+    #photo_s>ul{
+      position: relative;
+      width: 2240px;
+    }
+    #photo_s>ul>li{
+      overflow: hidden;
+      float: left;
+      transform: scale(0.9);
+      width: 120px; height: 120px;
+      margin: 0 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    #photo_s>ul>li:hover,
+    #photo_s>ul>li.on{
+      transform: scale(1);
+      border: 3px solid #fff; 
+      box-sizing: border-box;
+    }
 
-#photo>button{
-  position: absolute; top: 50%;
-  transform: translateY(-50%);
-  width: 36px; height: 33px;
-  background-image: url(../images/moana/icon.png);
-}
-#photo>.left{left: 0; background-position: -34px -68px;}
-#photo>.right{display: none; right: 0; background-position: -71px -68px;}
+  #photo>button{
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+    width: 36px; height: 33px;
+    background-image: url(../images/moana/icon.png);
+  }
+  #photo>.left{left: 0; background-position: -34px -68px;}
+  #photo>.right{display: none; right: 0; background-position: -71px -68px;}
 
 
 /* -------------------------- #production -------------------------- */
-#production{}
+  #note{
+    overflow: hidden;
+    position: absolute; left: 245px; top: 50%;
+    transform: translateY(-50%);
+    width: 950px; height: 500px;
+  }
+  #note>div{position: relative; width: 2850px;}
+  #note>div>figure{
+    float: left;
+    position: relative; 
+    width: 950px;
+  }
+  #note>div>figure>img{width: 450px;}
+  #note>div>figure>figcaption{
+    position: absolute; top: 100px; right: 0;
+    width: 450px;
+    color: #fff;
+    text-align: justify;
+  }
+  #note>div>figure>figcaption>span{
+    width: 52px; height: 72px;
+    background-image: url(../images/moana/font.png);
+  }
+  #note>div>figure>figcaption>strong{
+    display: block;
+    margin: 25px 0 60px;
+  }
+    .cont1 span{background-position: -325px -209px;}
+    .cont2 span{background-position: -385px -209px;}
+    .cont3 span{background-position: -447px -209px;}
+
+#production button{
+  position: absolute; top: 50%;
+  transform: translateY(-50%);
+  width: 25px; height: 64px;
+  background-image: url(../images/moana/icon.png);
+}
+#production .left{left: 0; background-position: -50px 0;}
+#production .right{right: 0; background-position: -82px 0;}
 
 
 /* -------------------------- footer -------------------------- */

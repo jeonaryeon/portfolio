@@ -1,4 +1,19 @@
 $(function(){
+  // 마우스휠 이벤트
+  $('section').on('mousewheel',function(event){
+    // 마우스 휠을 올렸을 때
+    if(delta>0){
+      var prev=$(this).prev().offset().top;
+      $('html,body').stop().animate({"scrollTop":prev},1400,"easeOutBounce");
+      // 마우스 휠을 내렸을 때
+    }else if(delta<0){
+      var next=$(this).next().offset().top;
+      $('html,body').stop().animate({"scrollTop":next},1400,"easeOutBounce");
+    }
+  });
+  
+  
+  // 스크롤 이벤트
   var introH=$('#intro').height();
   var wH=$(window).height();
   var wTop=$(window).scrollTop();
@@ -41,9 +56,51 @@ $(function(){
   }); // end of #intro>button
   
   
+  // #character 클릭이벤트
+  var c=0;
+  var cNum=$('#c_list li').length;
+  
+  function character(){
+    $('#c_list ul').stop().animate({left:-160*c});
+    if(c==0){
+      $('#c_list .right').hide();
+    }else if(c==cNum-4){
+      $('#c_list .left').hide();
+    }else{
+      $('#c_list .right').show();
+      $('#c_list .left').show();
+    }
+  }
+  
+  $('#c_list .left').on('click',function(){
+    if(c<cNum-4){
+      c++;
+      character();
+    }
+  });
+  
+  $('#c_list .right').on('click',function(){
+    if(c>0){
+      c--;
+      character();
+    }
+  });
+  
+  
+  $('#c_list li').on('click',function(){
+    var idx=$(this).index();
+    
+    $('#c_main>figure').stop().animate({top:150,opacity:0});
+    $('#c_main>figure>figcaption').stop().animate({top:180,opacity:0});
+    $('#c_main>figure').eq(idx).stop().delay(300).animate({top:0,opacity:'1'});
+    $('#c_main>figure').eq(idx).children('figcaption').stop().delay(400).animate({top:100,opacity:'1'});
+  });
+  
+  
   // #still-cut 클릭이벤트
   var s=0;
   var num=$('#photo_s>ul>li').length;
+  
   function photo(){
     $('#photo_s>ul').stop().animate({left:-160*s});
     if(s==0){
@@ -75,5 +132,20 @@ $(function(){
     
     $(this).addClass('on').siblings().removeClass('on');
     $('#photo_b>img').attr('src',"images/moana/stillcut"+(s+1)+"_b.jpg");
+  });
+  
+  
+  // #production 클릭이벤트
+  $('#production .left').on('click',function(){
+    $('#note>div').stop().animate({left:-950},function(){
+      $('#note figure:first').appendTo('#note>div');
+      $('#note>div').css({left:0});
+    });
+  });
+  
+  $('#production .right').on('click',function(){
+    $('#note>div').css({left:-950});
+    $('#note figure:last').prependTo('#note>div');
+    $('#note>div').stop().animate({left:0});
   });
 }); // end of function
