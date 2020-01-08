@@ -8,15 +8,13 @@
 
 
 /* -------------------------- 공통 -------------------------- */
-html,body{min-width: 1500px; height: 100%; background-color: #0d294f;}
-article{}
+html,body{height: 100%; background-color: #0d294f;}
 section{
   overflow: hidden;
-  width: 100%; height: 100%;
+  width: 100%; min-width: 1500px; height: 100%;
   font-size: 16px;
   line-height: 2;
 }
-
 .container{
   position: relative; 
   width: 1440px; height: 100%;
@@ -34,7 +32,7 @@ header{
   position: fixed; left: 50%; top: 4%; z-index: 1000;
   transform: translateX(-50%);
   width: 1440px;
-  opacity: 0;
+  opacity: 1;
 }
   #gnb{
     display: flex;

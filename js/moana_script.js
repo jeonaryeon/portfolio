@@ -1,17 +1,5 @@
 $(function(){
   // 마우스휠 이벤트
-  $('section').on('mousewheel',function(event){
-    // 마우스 휠을 올렸을 때
-    if(delta>0){
-      var prev=$(this).prev().offset().top;
-      $('html,body').stop().animate({"scrollTop":prev},1400,"easeOutBounce");
-      // 마우스 휠을 내렸을 때
-    }else if(delta<0){
-      var next=$(this).next().offset().top;
-      $('html,body').stop().animate({"scrollTop":next},1400,"easeOutBounce");
-    }
-  });
-  
   
   // 스크롤 이벤트
   var introH=$('#intro').height();
