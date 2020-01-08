@@ -74,6 +74,7 @@ header{
 #intro{
   position: relative;
   background-image: url(../images/moana/intro_bg2.jpg);
+  background-size: cover; background-position: center;
   background-repeat: no-repeat;
 }
 #intro>h1{
@@ -156,14 +157,14 @@ header{
     margin-bottom: 50px;
     background-image: url(../images/moana/font.png);
   }
-  #c_main .cont1 span{width: 258px; background-position: 0 -86px;}
+  #c_main .cont1 span{width: 259px; background-position: 0 -86px;}
   #c_main .cont2 span{width: 200px; background-position: -266px -86px;}
   #c_main .cont3 span{width: 234px; background-position: -474px -86px;}
   #c_main .cont4 span{width: 204px; background-position: -717px -86px;}
-  #c_main .cont5 span{width: 189px; background-position: 0 -142px;}
+  #c_main .cont5 span{width: 190px; background-position: 0 -142px;}
   #c_main .cont6 span{width: 380px; background-position: -198px -142px;}
   #c_main .cont7 span{width: 369px; background-position: -587px -142px;}
-  #c_main .cont8 span{width: 317px; background-position: 0 -205px;}
+  #c_main .cont8 span{width: 318px; background-position: 0 -205px;}
 
   /* #c_list */
   #c_list{
