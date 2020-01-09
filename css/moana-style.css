@@ -90,16 +90,14 @@ header{
   background-image: url(../images/moana/icon.png);
   animation: ani 0.4s alternate infinite;
 }
-#intro>span{position: absolute;}
+#intro>span{display: block; position: absolute;}
 #intro>.water1{
   right: 0; bottom: -150px;
-  width: 1474px; height: 1080px;
-  background-image: url(../images/moana/water1-1.png);
+  width: 77%;
 }
 #intro>.water2{
   right: 50px; bottom: 0;
-  width: 1534px; height: 1067px;
-  background-image: url(../images/moana/water2-1.png);
+  width: 80%;
 }
 
 
