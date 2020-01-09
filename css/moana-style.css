@@ -116,11 +116,10 @@ header{
 
   .info{
     right: 0;
-    width: 570px;
+    width: 560px;
     color: #fff;
   }
   .info>h3{font-size: 30px;}
-  .info>p{font-size: 14px;}
   .info>p>strong{display: block; font-size: 18px;}
   .info>p>strong:first-child{margin-top: -10px; margin-bottom: 15px;}
   .info>p>strong:nth-child(2){margin-top: 15px; margin-bottom: 5px;}
