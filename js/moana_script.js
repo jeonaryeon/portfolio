@@ -1,18 +1,4 @@
 $(function(){
-  // 마우스휠 이벤트
-  $("section").on("mousewheel DOMMouseScroll", function(event, delta){
-    if(delta>0){
-      //마우스 휠 up
-      var prev = $(this).prev().offset().top;
-      $("html,body").stop().animate({ "scrollTop": prev }, 1400, "easeOutBounce");
-    }else if(delta<0){
-      //마우스 휠 down
-      var next = $(this).next().offset().top;
-      $("html,body").stop().animate({ "scrollTop": next }, 1400, "easeOutBounce");
-    }  
-  });
-  
-  
   // 스크롤 이벤트
   var introH=$('#intro').height();
   var wH=$(window).height();
