@@ -9,8 +9,11 @@
 
 /* -------------------------- 공통 -------------------------- */
 html,body{height: 100%; background-color: #0d294f;}
+
+
 section{
   overflow: hidden;
+  position: relative;
   width: 100%; min-width: 1500px; height: 100%;
   font-size: 16px;
   line-height: 2;
@@ -27,12 +30,13 @@ section{
 }
 
 
+
 /* -------------------------- header -------------------------- */
 header{
   position: fixed; left: 50%; top: 4%; z-index: 1000;
   transform: translateX(-50%);
   width: 1440px;
-  opacity: 1;
+  opacity: 0;
 }
   #gnb{
     display: flex;
@@ -70,7 +74,6 @@ header{
 
 /* -------------------------- #intro -------------------------- */
 #intro{
-  position: relative;
   background-image: url(../images/moana/intro_bg2.jpg);
   background-size: cover; background-position: center;
   background-repeat: no-repeat;
@@ -124,7 +127,7 @@ header{
 
 
 /* -------------------------- #character -------------------------- */
-#character{position: relative; background-color: #9fc1dd;}
+#character{background-color: #9fc1dd;}
 #character>div{
   overflow: hidden;
   position: absolute; left: 50%; top: 50%;
@@ -192,7 +195,6 @@ header{
 
 
 /* -------------------------- #still-cut -------------------------- */
-#still-cut{position: relative;}
   #photo_b{
     position: absolute; left: 0; top: 50%;
     transform: translateY(-50%);
