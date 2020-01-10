@@ -1,7 +1,26 @@
 $(function(){
+  var wH=$(window).height();
+
+  $('section').each(function(index){
+    $(this).attr("data-index",wH*index);
+  });
+  
+  $('section').on("mousewheel",function(e){
+    var sectionPos=parseInt($(this).attr("data-index"));
+    if(e.originalEvent.wheelDelta>=0){
+      $("html,body").stop().animate({scrollTop:sectionPos-wH},100);
+      return false;
+    }else if(e.originalEvent.wheelDelta<0){
+      $("html,body").stop().animate({scrollTop:sectionPos+wH},100);
+      return false;
+    }
+  });
+  
+  
+  
   // 스크롤 이벤트
   var introH=$('#intro').height();
-  var wH=$(window).height();
+  
   var wTop=$(window).scrollTop();
   
   $(window).on('scroll',function(){
