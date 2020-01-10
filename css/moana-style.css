@@ -8,7 +8,7 @@
 
 
 /* -------------------------- 공통 -------------------------- */
-html,body{height: 100%; background-color: #0d294f;}
+html,body{height: 100%; color: #fff;}
 
 section{
   overflow: hidden;
@@ -28,7 +28,10 @@ section{
   background-repeat: no-repeat;
 }
 
-
+#about,#character,#production{
+  background-image: url(../images/moana/sea.jpg);
+  background-repeat: no-repeat;
+}
 
 /* -------------------------- header -------------------------- */
 header{
@@ -114,7 +117,6 @@ header{
   .info{
     right: 0;
     width: 560px;
-    color: #fff;
   }
   .info>h3{font-size: 30px;}
   .info>p>strong{display: block; font-size: 18px;}
@@ -124,7 +126,7 @@ header{
 
 
 /* -------------------------- #character -------------------------- */
-#character{background-color: #9fc1dd;}
+#character{background-position: center center;}
 #character>div{
   overflow: hidden;
   position: absolute; left: 50%; top: 50%;
@@ -238,6 +240,7 @@ header{
 
 
 /* -------------------------- #production -------------------------- */
+#production{background-position: center bottom;}
   #note{
     overflow: hidden;
     position: absolute; left: 245px; top: 50%;
@@ -254,7 +257,6 @@ header{
   #note>div>figure>figcaption{
     position: absolute; top: 100px; right: 0;
     width: 450px;
-    color: #fff;
     text-align: justify;
   }
   #note>div>figure>figcaption>span{
