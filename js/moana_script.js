@@ -8,14 +8,13 @@ $(function(){
   $('section').on("mousewheel",function(e){
     var sectionPos=parseInt($(this).attr("data-index"));
     if(e.originalEvent.wheelDelta>=0){
-      $("html,body").stop().animate({scrollTop:sectionPos-wH},100);
+      $("html,body").stop().animate({scrollTop:sectionPos-wH},10);
       return false;
     }else if(e.originalEvent.wheelDelta<0){
-      $("html,body").stop().animate({scrollTop:sectionPos+wH},100);
+      $("html,body").stop().animate({scrollTop:sectionPos+wH},10);
       return false;
     }
   });
-  
   
   
   // 스크롤 이벤트
