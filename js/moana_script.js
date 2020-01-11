@@ -8,10 +8,10 @@ $(function(){
   $('section').on("mousewheel",function(e){
     var sectionPos=parseInt($(this).attr("data-index"));
     if(e.originalEvent.wheelDelta>=0){
-      $("html,body").stop().animate({scrollTop:sectionPos-wH},10);
+      $("html,body").stop().animate({scrollTop:sectionPos-wH},50);
       return false;
     }else if(e.originalEvent.wheelDelta<0){
-      $("html,body").stop().animate({scrollTop:sectionPos+wH},10);
+      $("html,body").stop().animate({scrollTop:sectionPos+wH},50);
       return false;
     }
   });
