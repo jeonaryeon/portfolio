@@ -189,8 +189,8 @@ header{
     width: 16px; height: 34px;
     background-image: url(../images/moana/icon.png);
   }
-  #c_list>.left{left: 0; background-position: 0 -67px;}
-  #c_list>.right{display: none; right: 0; background-position: -18px -67px;}
+  #c_list>.left{display: none; left: 0; background-position: 0 -67px;}
+  #c_list>.right{right: 0; background-position: -18px -67px;}
 
 
 /* -------------------------- #still-cut -------------------------- */
@@ -235,8 +235,8 @@ header{
     width: 36px; height: 33px;
     background-image: url(../images/moana/icon.png);
   }
-  #photo>.left{left: 0; background-position: -34px -68px;}
-  #photo>.right{display: none; right: 0; background-position: -71px -68px;}
+  #photo>.left{display: none; left: 0; background-position: -34px -68px;}
+  #photo>.right{right: 0; background-position: -71px -68px;}
 
 
 /* -------------------------- #production -------------------------- */

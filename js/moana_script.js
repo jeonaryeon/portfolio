@@ -67,23 +67,23 @@ $(function(){
   function character(){
     $('#c_list ul').stop().animate({left:-160*c});
     if(c==0){
-      $('#c_list .right').hide();
-    }else if(c==cNum-4){
       $('#c_list .left').hide();
+    }else if(c==cNum-4){
+      $('#c_list .right').hide();
     }else{
       $('#c_list .right').show();
       $('#c_list .left').show();
     }
   }
   
-  $('#c_list .left').on('click',function(){
+  $('#c_list .right').on('click',function(){
     if(c<cNum-4){
       c++;
       character();
     }
   });
   
-  $('#c_list .right').on('click',function(){
+  $('#c_list .left').on('click',function(){
     if(c>0){
       c--;
       character();
@@ -108,23 +108,23 @@ $(function(){
   function photo(){
     $('#photo_s>ul').stop().animate({left:-160*s});
     if(s==0){
-      $('#photo>.right').hide();
-    }else if(s==num-5){
       $('#photo>.left').hide();
+    }else if(s==num-5){
+      $('#photo>.right').hide();
     }else{
       $('#photo>.left').show();
       $('#photo>.right').show();
     }
   }
 
-  $('#photo>.left').on('click',function(){
+  $('#photo>.right').on('click',function(){
     if(s<num-5){
       s++;
       photo();
     }
   });
   
-  $('#photo>.right').on('click',function(){
+  $('#photo>.left').on('click',function(){
     if(s>0){
       s--;
       photo();
@@ -140,14 +140,14 @@ $(function(){
   
   
   // #production 클릭이벤트
-  $('#production .left').on('click',function(){
+  $('#production .right').on('click',function(){
     $('#note>div').stop().animate({left:-950},function(){
       $('#note figure:first').appendTo('#note>div');
       $('#note>div').css({left:0});
     });
   });
   
-  $('#production .right').on('click',function(){
+  $('#production .left').on('click',function(){
     $('#note>div').css({left:-950});
     $('#note figure:last').prependTo('#note>div');
     $('#note>div').stop().animate({left:0});
