@@ -38,7 +38,7 @@ $(function(){
     }
   }); // end of scroll
   
-  $('#gnb>li').on('click',function(){
+  $('#gnb>li').on('click focus',function(){
     var idx=$(this).index();
     var top=wH*idx;
     $('html,body').stop().animate({scrollTop:top},500);
