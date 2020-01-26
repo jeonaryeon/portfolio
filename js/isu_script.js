@@ -55,11 +55,13 @@ $(function(){
   var title=$('#sub_menu .tit>a').text();
   $('.sub_banner h2').text(title);
   
-  $('.tit>a').on('click',function(){
+  $('.tit>a').on('click',function(event){
+    event.preventDefault();
     $('.sub_tab>ul').hide();
     $(this).siblings('ul').stop().slideToggle(200);
   });
-  $('.sub_tab>a').on('click',function(){
+  $('.sub_tab>a').on('click',function(event){
+    event.preventDefault();
     $('.tit>ul').hide();
     $(this).siblings('ul').stop().slideToggle(200);
   });
