@@ -26,10 +26,13 @@
    
   <style>
     /* -------------------------- #history -------------------------- */
-    table{margin: 80px auto 0;}
+    table{
+      margin: 100px auto 0; 
+      color: #666;
+    }
     th{
       padding-right: 30px;
-      font-weight: 500; font-size: 1.5em;
+      font-weight: 500; font-size: 2em;
       vertical-align: top;
       border-right: 2px solid #eee;
     }
@@ -41,21 +44,45 @@
     td>strong{
       position: relative; left: 40px;
       margin-right: 50px;
-      font-weight: 500; font-size: 1.2em;
+      font-weight: 400; font-size: 1.7em;
       vertical-align: top;
     }
     td>em{
       display: inline-block;
-      font-size: 1.1em;
+      font-size: 1.6em;
     }
 
     .dot{
       display: block;
-      position: absolute; left: -40px; top: 7px;
-      width: 13px; height: 13px;
+      position: absolute; left: -40px; top: 12px;
+      width: 15px; height: 15px;
       background-color: #fff;
       border: 3px solid #99ca3b; border-radius: 50%;
       box-sizing: border-box;
+    }
+    
+    
+    /* media query */
+    @media screen and (max-width:1024px){
+      th{font-size: 1.5em;}
+      td>strong{font-size: 1.2em;}
+      td>em{margin-top: 5px; font-size: 1.1em;}
+      
+      .dot{top: 5px;}
+    }
+    
+    @media screen and (max-width:600px){
+      table{margin-top: 50px;}
+      th{padding-right: 15px;}
+      td>strong{left: 20px;}
+      td>em{
+        display: block;
+        margin-left: 20px;
+      }
+      .dot{
+        left: -20px;
+        width: 10px; height: 10px;
+      }
     }
   </style>
 </head>
@@ -299,7 +326,7 @@
        <caption>연혁</caption>
        <tbody>
          <tr>
-           <th>2018년</th>
+           <th>2018</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>한국토지주택공사 고객품질우수상 / 건설업체부문</em>
@@ -311,7 +338,7 @@
          </tr>
          
          <tr>
-           <th>2017년</th>
+           <th>2017</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>
@@ -336,7 +363,7 @@
          </tr>
          
          <tr>
-           <th>2016년</th>
+           <th>2016</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>한국토지주택공사 LH 고객품질 장려상(건설업체부문)</em>
@@ -352,7 +379,7 @@
          </tr>
          
          <tr>
-           <th>2015년</th>
+           <th>2015</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>한국토지주택공사 2015년도 LH 고객품질대상</em>
@@ -371,7 +398,7 @@
          </tr>
          
          <tr>
-           <th>2014년</th>
+           <th>2014</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>
@@ -403,7 +430,7 @@
          </tr>
          
          <tr>
-           <th>2013년</th>
+           <th>2013</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>	
@@ -423,7 +450,7 @@
          </tr>
          
          <tr>
-           <th>2012년</th>
+           <th>2012</th>
            <td>
              <strong><span class="dot"></span>11월</strong>
              <em>GPD Award 2012 그랑프리 수상(공공건축물 분야) / 인천 주택문화관</em>
@@ -431,7 +458,7 @@
          </tr>
          
          <tr>
-           <th>2011년</th>
+           <th>2011</th>
            <td>
              <strong><span class="dot"></span>07월</strong>
              <em>
@@ -444,7 +471,7 @@
          </tr>
          
          <tr>
-           <th>2010년</th>
+           <th>2010</th>
            <td>
              <strong><span class="dot"></span>10월</strong>
              <em>
@@ -467,7 +494,7 @@
          </tr>
          
          <tr>
-           <th>2009년</th>
+           <th>2009</th>
            <td>
              <strong><span class="dot"></span>07월</strong>
              <em>시에라리온 케네마-펜덤부 도로공사 수주</em>
@@ -475,7 +502,7 @@
          </tr>
          
          <tr>
-           <th>2008년</th>
+           <th>2008</th>
            <td>
              <strong><span class="dot"></span>10월</strong>
              <em>월파이낸셜뉴스 제8회 fn 하우징 파워브랜드대상 [중견부문] 선정</em>
@@ -487,7 +514,7 @@
          </tr>
          
          <tr>
-           <th>2006년</th>
+           <th>2006</th>
            <td>
              <strong><span class="dot"></span>05월</strong>
              <em>국제표준경영대상 [안전경영]부문 대상 수상</em>
@@ -499,7 +526,7 @@
          </tr>
          
          <tr>
-           <th>2005년</th>
+           <th>2005</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>제32회 매경광고대상 TV부문 [건설/기업 PR 부문] - 이수건설 브라운스톤 금상 수상</em>
@@ -519,7 +546,7 @@
          </tr>
          
          <tr>
-           <th>2004년</th>
+           <th>2004</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>
@@ -543,7 +570,7 @@
          </tr>
          
          <tr>
-           <th>2003년</th>
+           <th>2003</th>
            <td>
              <strong><span class="dot"></span>11월</strong>
              <em>
@@ -566,7 +593,7 @@
          </tr>
          
          <tr>
-           <th>2002년</th>
+           <th>2002</th>
            <td>
              <strong><span class="dot"></span>11월</strong>
              <em>브라운스톤, '2002 서울경제 마케팅혁신부분 최우수상 수상</em>
@@ -582,7 +609,7 @@
          </tr>
          
          <tr>
-           <th>2001년</th>
+           <th>2001</th>
            <td>
              <strong><span class="dot"></span>07월</strong>
              <em>대전광역시 '우수시공업체' 선정</em>
@@ -594,7 +621,7 @@
          </tr>
          
          <tr>
-           <th>1999년</th>
+           <th>1999</th>
            <td>
              <strong><span class="dot"></span>06월</strong>
              <em>환경부장관 표창장 수여</em>
@@ -602,7 +629,7 @@
          </tr>
          
          <tr>
-           <th>1998년</th>
+           <th>1998</th>
            <td>
              <strong><span class="dot"></span>09월</strong>
              <em>본사 이전(반포 이수화학빌딩)</em>
@@ -610,7 +637,7 @@
          </tr>
          
          <tr>
-           <th>1997년</th>
+           <th>1997</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>산업설비공사업 등록(제97-13호)</em>
@@ -630,7 +657,7 @@
          </tr>
          
          <tr>
-           <th>1996년</th>
+           <th>1996</th>
            <td>
              <strong><span class="dot"></span>09월</strong>
              <em>동림산업(주)에서 이수건설(주)로 상호 변경</em>
@@ -650,7 +677,7 @@
          </tr>
          
          <tr>
-           <th>1995년</th>
+           <th>1995</th>
            <td>
              <strong><span class="dot"></span>11월</strong>
              <em>산폐수정화시설업 등록(제5호)</em>
@@ -666,7 +693,7 @@
          </tr>
          
          <tr>
-           <th>1994년</th>
+           <th>1994</th>
            <td>
              <strong><span class="dot"></span>12월</strong>
              <em>토목건축공사업 면허취득(제1500호)</em>
@@ -674,7 +701,7 @@
          </tr>
          
          <tr>
-           <th>1990년</th>
+           <th>1990</th>
            <td>
              <strong><span class="dot"></span>04월</strong>
              <em>주택건설업자 면허 취득</em>
@@ -682,7 +709,7 @@
          </tr>
          
          <tr>
-           <th>1989년</th>
+           <th>1989</th>
            <td>
              <strong ><span class="dot"></span>11월</strong>
              <em>일반건설업 면허 취득(건축공사업 제33호)</em>
@@ -690,7 +717,7 @@
          </tr>
          
          <tr>
-           <th>1983년</th>
+           <th>1983</th>
            <td>
              <strong><span class="dot"></span>07월</strong>
              <em>본사 사옥 준공(성동구 홍익동)</em>
@@ -698,7 +725,7 @@
          </tr>
          
          <tr>
-           <th>1976년</th>
+           <th>1976</th>
            <td>
              <strong><span class="dot"></span>09월</strong>
              <em>회사 설립</em>
