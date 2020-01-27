@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>isu E&amp;C</title>
+  
+  <!-- fontawesome 연결 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+  <!-- css 연결 -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/isu_style.css">
+  
+  <!-- js 연결 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../js/isu_script.js"></script>
+  
+  <!-- HTML5shiv ie6~8 -->
+  <!--
+    [if lt Ie 9]
+    <script src="js/html5shiv.min.js"></script>
+    <script type="text/javascript">
+     alert("현재 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트 해주세요!");
+    </script>
+   -->
+   
+  <style>
+    /* -------------------------- #history -------------------------- */
+    table{margin: 80px auto 0;}
+    th{
+      padding-right: 30px;
+      font-weight: 500; font-size: 1.5em;
+      vertical-align: top;
+      border-right: 2px solid #eee;
+    }
+    td{
+      display: block;
+      margin: 2px 0 10px -9px;
+    }
+    td:last-child{margin-bottom: 50px;}
+    td>strong{
+      position: relative; left: 40px;
+      margin-right: 50px;
+      font-weight: 500; font-size: 1.2em;
+      vertical-align: top;
+    }
+    td>em{
+      display: inline-block;
+      font-size: 1.1em;
+    }
+
+    .dot{
+      display: block;
+      position: absolute; left: -40px; top: 7px;
+      width: 13px; height: 13px;
+      background-color: #fff;
+      border: 3px solid #99ca3b; border-radius: 50%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>
+        <a href="../isu.html">
+          <img src="../images/isu/logo.png" alt="이수건설 로고">
+        </a>
+      </h1>
+      <button type="button" class="hamBtn icon">menu image</button>
+      <nav id="gnb_b">
+        <button type="button" class="close icon">close image</button>
+        <ul class="clearfix">
+          <li>
+            <a href="isu_company1.html">회사소개<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="isu_company1.html">CEO인사말</a></li>
+                <li><a href="isu_company2.html">연혁</a></li>
+                <li><a href="#">VISION</a></li>
+                <li><a href="#">윤리경영</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">이수그룹소개</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">주요사업<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">건축사업</a></li>
+                <li><a href="#">토목사업</a></li>
+                <li><a href="#">플랜트사업</a></li>
+                <li><a href="#">주택사업</a></li>
+                <li><a href="#">조경사업</a></li>
+                <li><a href="#">해외사업</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">분양<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">분양정보</a></li>
+                <li><a href="#">현장정보</a></li>
+                <li><a href="#">입주안내</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">채용정보<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">인재상</a></li>
+                <li><a href="#">복리후생</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">인사제도</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">홍보센터<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">브라운스톤</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">기업뉴스</a></li>
+                <li><a href="#">이수사보</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="isu_customer2.html">고객센터<span class="line"></span></a>
+            <div class="sub">
+              <ul>
+                <li><a href="#">A/S</a></li>
+                <li><a href="isu_customer2.html">찾아오시는길</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav> <!-- end of nav.gnb_b -->
+    </div>
+    <div class="tnb clearfix">
+      <div class="container">
+        <p>ENGLISH</p>
+        <p>CHINESE</p>
+      </div>
+    </div>
+  </header> <!-- end of header -->
+  <div class="gnb_bBg"></div>
+  
+  <hr />
+  
+  <nav id="gnb_s">
+    <button type="button" class="close icon">close image</button>
+    <ul class="clearfix">
+      <li>
+        <a href="isu_company1.html">
+          회사소개
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="isu_company1.html">CEO인사말</a></li>
+            <li><a href="isu_company2.html">연혁</a></li>
+            <li><a href="#">VISION</a></li>
+            <li><a href="#">윤리경영</a></li>
+            <li><a href="#">조직도</a></li>
+            <li><a href="#">이수그룹소개</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#"> 
+          주요사업
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">건축사업</a></li>
+            <li><a href="#">토목사업</a></li>
+            <li><a href="#">플랜트사업</a></li>
+            <li><a href="#">주택사업</a></li>
+            <li><a href="#">조경사업</a></li>
+            <li><a href="#">해외사업</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          분양
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">분양정보</a></li>
+            <li><a href="#">현장정보</a></li>
+            <li><a href="#">입주안내</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          채용정보
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">인재상</a></li>
+            <li><a href="#">복리후생</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">인사제도</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="#">
+          홍보센터
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">브라운스톤</a></li>
+            <li><a href="#">홍보영상</a></li>
+            <li><a href="#">기업뉴스</a></li>
+            <li><a href="#">이수사보</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="isu_customer2.html">
+          고객센터
+          <span class="line"></span><span class="icon down">down arrow</span>
+        </a>
+        <div class="sub">
+          <ul>
+            <li><a href="#">A/S</a></li>
+            <li><a href="isu_customer2.html">찾아오시는길</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav> <!-- end of nav.gnb_s -->
+  <div class="gnb_sBg"></div>
+  
+  <hr />
+  
+  <section id="customer_banner" class="sub_banner">
+    <div class="container">
+      <h2></h2>
+      <p>
+        건설은 아름다운 심포니다.
+        건설의 숨은 주역 <strong>이수건설</strong>
+      </p>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <div id="sub_menu">
+    <div class="container">
+      <ul class="clearfix">
+        <li><a href="../isu.html" class="icon">home icon</a></li>
+        <li class="tit">
+          <a href="#">회사소개<i class="fas fa-caret-down"></i></a>
+          <ul class="page">
+            <li><a href="isu_company1.html">회사소개</a></li>
+            <li><a href="#">주요사업</a></li>
+            <li><a href="#">분양</a></li>
+            <li><a href="#">채용정보</a></li>
+            <li><a href="#">홍보센터</a></li>
+            <li><a href="isu_customer2.html">고객센터</a></li>
+          </ul>
+        </li>
+        <li class="sub_tab">
+          <a href="#">연혁<i class="fas fa-caret-down"></i></a>
+          <ul>
+            <li><a href="isu_company1.html">CEO 인사말</a></li>
+            <li><a href="isu_company2.html">연혁</a></li>
+            <li><a href="#">VISION</a></li>
+            <li><a href="#">윤리경영</a></li>
+            <li><a href="#">이수그룹소개</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <hr />
+  
+  <section id="history">
+    <div class="container">
+      <h2>연혁</h2>
+      <p>
+        1976년 창업 이후 건축, 토목, 주택, 플랜트, 환경, 국가기반시설(SOC), 해외사업 등 모든 건설 사업부문에서 종합건설회사로 성장, 발전하고 있습니다.
+     </p>
+     <table>
+       <caption>연혁</caption>
+       <tbody>
+         <tr>
+           <th>2018년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>한국토지주택공사 고객품질우수상 / 건설업체부문</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>삼척에코 건자재(주) 플랜트 준공 공로패 / 삼척에코 건자재 현장</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2017년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>
+               대표이사 제민호 취임 <br />
+               국토교통부 국토교통업무 발전기여 표창장 / 북일 ~ 남일 2공구도로 현장 <br />
+               청주시 우수협력기관 감사패 / 북일 ~ 남일 2공구도로 현장
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>08월</strong>
+             <em>환경부 2017 대한민국 고효율, 친환경 주거 및 건축 기자재 대상 / 브라운스톤 험프리스</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>05월</strong>
+             <em>한양대학교 감사패 / 한양대학교 ERICA 캠퍼스 행복기숙사
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>한국토지주택공사 LH 우수시공패(주거시설분야) / 평택소사벌 LH 현장</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2016년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>한국토지주택공사 LH 고객품질 장려상(건설업체부문)</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>대표이사 황엽 취임</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>02월</strong>
+             <em>한국토지주택공사 2016년도 LH 우수시공패(주거시설분야)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2015년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>한국토지주택공사 2015년도 LH 고객품질대상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>
+               한국토지주택공사 격려장 / 하남미사LH현장 <br />
+ 	           [2015 우수주거문화 공모전] 우수상(커뮤니티디자인부문) / 의왕청계LH현장
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>02월</strong>
+             <em>건국대학교 감사패 / 건국대학교 부동산학관</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2014년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>
+               한국토지주택공사 격려장 / 평택소사벌LH현장 <br />
+               대한유화공업주식회사 감사패 / 대한유화 EO/EG PLANT공사현장 <br />
+               충청북도지사 표창패 / 청주시 국도대체우회도로공사현장
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>
+               [2014 대한민국 대표아파트 대상] 국토교통부장관상 <br />
+               (브랜드대상 평택 브라운스톤 험프리스) <br />
+               건국대학교 감사패
+             </em>  
+           </td>
+           <td>
+             <strong><span class="dot"></span>10월</strong>
+             <em>조경공사업 면허 취득(제01-0330호)</em>  
+           </td>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>한국토지주택공사 격려패 / 대구금호LH현장</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>한국토지주택공사 감사패 및 격려장 / 대전천동LH현장</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2013년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>	
+               	한국토지주택공사 격려장 / 성남여수택지현장 <br />
+                대표이사 제민호 취임 <br />
+               	한국토지주택공사 격려장 / 대구금호LH현장
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>08월</strong>
+             <em>한국토지주택공사 격려패 / 대전천동LH현장</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>한국토지주택공사 감사패 및 격려장 / 인천향촌LH현장</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2012년</th>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>GPD Award 2012 그랑프리 수상(공공건축물 분야) / 인천 주택문화관</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2011년</th>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>
+               2010/2011 국제공공디자인(IPDA) 3개 부문 수상 <br />
+               브라운스톤주택문화관-공공건축물분야(그랑프리수상) <br />
+               브라운스톤공덕-생활환경분야(주니어그랑프리) <br />
+               부산해운대센텀호텔-공공건축물분야(주니어그랑프리)
+             </em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2010년</th>
+           <td>
+             <strong><span class="dot"></span>10월</strong>
+             <em>
+               2010년 건설공제조합 감사패 <br />
+               제8회 한국색채대상(건축인테리어부분 최우수상)
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>중국 GOC(TC) LAB Project 수주</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>2010년 상반기 보증이용실적분야 우수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>03월</strong>
+             <em>2010년 한국토지주택공사 우수시공상(건축시설분야)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2009년</th>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>시에라리온 케네마-펜덤부 도로공사 수주</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2008년</th>
+           <td>
+             <strong><span class="dot"></span>10월</strong>
+             <em>월파이낸셜뉴스 제8회 fn 하우징 파워브랜드대상 [중견부문] 선정</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>비아 해외사업 첫 수주리</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2006년</th>
+           <td>
+             <strong><span class="dot"></span>05월</strong>
+             <em>국제표준경영대상 [안전경영]부문 대상 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>머니투데이 '2006 대한민국 아파트 브랜드 대상' 선호도 부문 최우수상 수상</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2005년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>제32회 매경광고대상 TV부문 [건설/기업 PR 부문] - 이수건설 브라운스톤 금상 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>브라운스톤, ‘2005 한경주거문화대상’ (주상복합 부문) 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>서울신문 제 1회 ‘서울 디자인 대상’ 최우수상 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>윤리경영 선포</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2004년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>
+               거제시청 건축대상 수상 <br />
+               매경골든타워 아파트 브랜드 부문 대상 <br />
+               서울신문 2004년 하반기 소비자만족 히트상품 선정
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>06월</strong>
+             <em>국민일보[히트상품] 건설 APT부분-이수건설 브라운스톤 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>'브라운스톤 봉천' 2004년 환경관리 모범(우수)공사장 지정</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>02월</strong>
+             <em>헤럴드경제 주최 감성경영 대상 수상</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2003년</th>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>
+               브라운스톤, '2003 한경 주거문화대상(브랜드부문) <br />
+               이수건설, '2003 서울경제 광고대상 수상
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>08월</strong>
+             <em>한경 '녹색경영대상' 종합건설 우수상 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>브라운스톤, 한국일보 2003상반기 히트상품 주거부분 베스트 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>05월</strong>
+             <em>브라운스톤, 2003 상반기 서경 베스트 히트 상품 선정</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2002년</th>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>브라운스톤, '2002 서울경제 마케팅혁신부분 최우수상 수상</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>10월</strong>
+             <em>고품격 브랜드 '브라운스톤' 출시</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>ISO14001 환경경영시스템 인증 취득</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>2001년</th>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>대전광역시 '우수시공업체' 선정</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>03월</strong>
+             <em>서울시 도시개발공사 '우수건설업자' 지정</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1999년</th>
+           <td>
+             <strong><span class="dot"></span>06월</strong>
+             <em>환경부장관 표창장 수여</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1998년</th>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>본사 이전(반포 이수화학빌딩)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1997년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>산업설비공사업 등록(제97-13호)</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>폐기물처리시설 설계시공업 등록(제206호)</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>KSA9001 / ISO9001 품질시스템 인증 취득</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>03월</strong>
+             <em>도시가스시설공사업 등록(제97-1호)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1996년</th>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>동림산업(주)에서 이수건설(주)로 상호 변경</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>
+               해외건설업 등록 일반건설업(제206호) <br />
+               해외건설업 등록 전기공사업(제126호) <br />
+               해외건설업 등록 환경오염방지시설공사(제7호)
+             </em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>05월</strong>
+             <em>주택건설업(대지조성) 등록(제96-04-1호)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1995년</th>
+           <td>
+             <strong><span class="dot"></span>11월</strong>
+             <em>산폐수정화시설업 등록(제5호)</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>10월</strong>
+             <em>수질오염방지시설업 등록(제431호)</em>
+           </td>
+           <td>
+             <strong><span class="dot"></span>05월</strong>
+             <em>제1종 전기공사업 면허(제1790호)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1994년</th>
+           <td>
+             <strong><span class="dot"></span>12월</strong>
+             <em>토목건축공사업 면허취득(제1500호)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1990년</th>
+           <td>
+             <strong><span class="dot"></span>04월</strong>
+             <em>주택건설업자 면허 취득</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1989년</th>
+           <td>
+             <strong ><span class="dot"></span>11월</strong>
+             <em>일반건설업 면허 취득(건축공사업 제33호)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1983년</th>
+           <td>
+             <strong><span class="dot"></span>07월</strong>
+             <em>본사 사옥 준공(성동구 홍익동)</em>
+           </td>
+         </tr>
+         
+         <tr>
+           <th>1976년</th>
+           <td>
+             <strong><span class="dot"></span>09월</strong>
+             <em>회사 설립</em>
+           </td>
+         </tr>
+       </tbody>
+     </table>
+    </div>
+  </section>
+  
+  <hr />
+  
+  <footer>
+    <div id="fnb">
+      <div class="container">
+        <ul class="clearfix">
+          <li><a href="#">회사소개</a></li>
+          <li><a href="#">채용정보</a></li>
+          <li><a href="#">기업뉴스</a></li>
+          <li><a href="#">A/S정보</a></li>
+          <li class="company">
+            <a href="#" class="allMenu">이수계열사 전체보기<span class="icon">plus</span></a>
+            <div class="company_li">
+              <div>
+                <h2>이수계열사</h2>
+                <ul class="clearfix">
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg01.png" alt="(주) 이수"></span>(주) 이수</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg02.png" alt="이수화학"></span>이수화학</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg03.png" alt="이수페타시스"></span>이수페타시스</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg04.png" alt="이수건설"></span>이수건설</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg05.png" alt="이수시스템"></span>이수시스템</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg06.png" alt="이수창업투자"></span>이수창업투자</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg07.png" alt="이수앱지스"></span>이수앱지스</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg08.png" alt="이수엑사켐"></span>이수엑사켐</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg09.png" alt="이수엑사보드"></span>이수엑사보드</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg10.png" alt="이수 C&E"></span>이수 C&amp;E</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg11.png" alt="토다이수"></span>토다이수</a>
+                  </li>
+                  <li>
+                    <a href="#"><span><img src="../images/isu/allMenu_bg12.png" alt="이수AMC"></span>이수AMC</a>
+                  </li>
+                </ul>
+                <button class="icon close2">close</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_main">
+      <div class="container">
+        <h2><a href="#"><img src="../images/isu/footer_logo.png" alt="footer logo"></a></h2>
+        <div class="cont">
+          <p>
+            <a href="#">TEL : 02)590-6500</a>
+            사업자등록번호 : 206-81-40254
+            <span>대표이사 : 제민호</span>
+            <span>서울특별시 서초구 사평대로 84 (반포동)</span>
+          </p>
+          <address>
+            개인 포트폴리오로 해당 기업과는 관련없음을 알려드립니다.
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
