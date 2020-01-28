@@ -25,35 +25,184 @@
    -->
    
   <style>
-    /* -------------------------- #contact_us -------------------------- */
-    #map{
-      width: 100%; height: 500px;
-      margin: 30px auto;
-    }
-    #contact{
-      padding: 50px 0;
-      background-color: #eee;
-    }
-    #contact input{
-      display: block;
-      width: 80%; height: 50px;
-      margin: 0 auto 30px;
-      font-size: 1em;
-      text-indent: 1%;
-      border: 0; border-radius: 5px;
-    }
-    #contact #inquiry{height: 250px;}
-    #contact button{
-      display: block;
-      width: 20%;
-      margin: 40px auto 0; padding: 15px 0;
-      color: #fff;
+    /* -------------------------- #news -------------------------- */
+    /* #n_top */
+    #n_top{width: 80%; margin: 50px auto 20px;}
+    #n_top>p{
+      float: left;
+      margin: 0;
       font-size: 1.2em;
-      text-align: center;
-      background-color: #99ca3b;
-      border-radius: 5px;
+      line-height: 35px;
+      text-align: left;
+    }
+    #n_top>p>strong{
+      margin-left: 5px;
+      color: #0090d6;
+      font-weight: 500; font-size: 1.2em;
+    }
+    #n_top>form{float: right;}
+    form p{
+      display: inline; 
+      color: #888;
+      font-size: 1.1em;
+    }
+    form select{
+      width: 90px; height: 35px;
+      margin: 0 10px;
+      font-size: 1em;
+      text-indent: 10px;
+      background-color: #eee;
+      background-image: url(../images/isu/down.png);
+      background-position: 65px 12px;
+      background-repeat: no-repeat;
+      border: 0; border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    form input{
+      width: 250px; height: 35px;
+      margin-right: 10px; padding: 0 10px;
+      font-size: 1em;
+      background-color: #eee;
+      border: 0;
+    }
+    form button{
+      width: 60px; height: 35px;
+      color: #eee;
+      font-size: 1em;
+      background-color: #555;
+    }
+    
+    /* #n_main */
+    #n_main{
+      width: 80%;
+      margin: 0 auto;
+    }
+      table{
+        width: 100%; 
+        font-size: 1.2em;
+      }
+      thead>tr{
+        display: block;
+        padding: 10px 20px;
+        border-bottom: 2px solid #999;
+      }
+        th{
+          display: inline-block;
+          color: #888;
+          font-weight: 500;
+        }
+        th:nth-child(1){width: 10%; text-align: left;}
+        th:nth-child(2){width: 55%; text-align: left;}
+        th:nth-child(3){width: 20%;}
+        th:nth-child(4){width: 13%; text-align: right;}
+    
+      tbody>tr{
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+      }
+        td{
+          display: inline-block;
+          color: #555;
+        }
+        td:nth-child(1){width: 10%;}
+        td:nth-child(2){width: 55%;}
+        td:nth-child(3){width: 20%; text-align: center;}
+        td:nth-child(4){width: 13%; text-align: right;}
+
+      .n_list{
+        position: relative;
+        width: 420px; height: 35px;
+        margin: 50px auto 0;
+        color: #888;
+        line-height: 35px;
+        text-align: center;
+      }
+      .n_list>ul{margin-left: 35px;}
+      .n_list>ul>li{
+        float: left;
+        width: 35px; height: 35px;
+        border: 1px solid #eee; border-right: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      .n_list>ul>li.on{
+        color: #0090d6;
+        font-weight: 600;
+        border-color: #0090d6; border-right: 1px solid #0090d6;
+      }
+
+      .n_list>button{
+        position: absolute; top: 0;
+        width: 35px; height: 35px;
+        color: #888;
+        font-size: 1.2em;
+        border: 1px solid #eee;
+        box-sizing: border-box;
+      }
+      .n_list>.n_left{
+        left: 0;
+         border-right: 0;
+      }
+      .n_list>.n_right{right: 0;}
+    
+    /* media query */
+    @media screen and (max-width:1439px){
+      #n_top,#n_main{width: 100%;}
+    }
+    
+    @media screen and (max-width:768px){
+      #n_top>p{line-height: 30px;}
+      form select{
+        width: 75px; height: 30px;
+        background-image: url(../images/isu/down_s.png);
+        background-position: 60px 12px;
+      }
+      form input{width: 150px; height: 30px;}
+      form button{height: 30px;}
+    }    
+    
+    @media screen and (max-width:600px){
+      #n_top{margin-top: 30px;}
+      #n_top>p{
+        float: none; 
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      #n_top>form{
+        float: none;
+        text-align: center;
+      }
+      
+      th:nth-child(1), td:nth-child(1){width: 12%;}
+      th:nth-child(2), td:nth-child(2){width: 86%;}
+      
+      th:nth-child(3), th:nth-child(4),
+      td:nth-child(3), td:nth-child(4){display: none;}
+      
+      .n_list{
+        width: 300px;
+        margin-top: 30px;
+        line-height: 25px;
+      }
+      .n_list>ul{margin-left: 25px;}
+      .n_list>ul>li{width: 25px; height: 25px;}
+      .n_list>button{width: 25px; height: 25px;}
     }
   </style>
+  
+  <script>
+    $(function(){
+      var n=$('tbody>tr>.num:first').text();
+      $('#n_top>p>strong').text(n);
+      
+      $('.n_list>ul>li').on('click focus',function(){
+        $(this).addClass('on').siblings().removeClass('on');
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -259,7 +408,7 @@
       <ul class="clearfix">
         <li><a href="../isu.html" class="icon">home icon</a></li>
         <li class="tit">
-          <a href="#">고객센터<i class="fas fa-caret-down"></i></a>
+          <a href="#">홍보센터<i class="fas fa-caret-down"></i></a>
           <ul class="page">
             <li><a href="isu_company1.html">회사소개</a></li>
             <li><a href="#">주요사업</a></li>
@@ -270,10 +419,12 @@
           </ul>
         </li>
         <li class="sub_tab">
-          <a href="#">찾아오시는 길<i class="fas fa-caret-down"></i></a>
+          <a href="#">기업뉴스<i class="fas fa-caret-down"></i></a>
           <ul>
-            <li><a href="#">A/S정보</a></li>
-            <li><a href="isu_customer2.html">찾아오시는 길</a></li>
+            <li><a href="#">브라운스톤</a></li>
+            <li><a href="#">홍보영상</a></li>
+            <li><a href="isu_promote3.html">기업뉴스</a></li>
+            <li><a href="#">이수사보</a></li>
           </ul>
         </li>
       </ul>
@@ -282,23 +433,120 @@
   
   <hr />
   
-  <section id="contact_us">
+  <section id="news">
     <div class="container">
-      <h2>Contact us</h2>
-      <p>서울특별시 서초구 사평대로 84 (반포동)</p>
-      <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4184489510335!2d126.99172035063582!3d37.49804773570657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca19f03812b95%3A0xfaf417142f384cde!2z7J207IiY6rG07ISkKOyjvCk!5e0!3m2!1sko!2skr!4v1576679583009!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <h2>기업뉴스</h2>
+      <div id="n_top" class="clearfix">
+        <p>
+          총 <strong>n</strong> 건의 글이 있습니다.
+        </p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>검색</legend>
+            <p>검색구분</p>
+            <select name="search_s" id="search_s">
+              <option value="all">전체</option>
+              <option value="title">제목</option>
+              <option value="content">내용</option>
+            </select>
+            <input type="text" id="search" name="search" placeholder="검색어를 입력하세요.">
+            <button>검색</button>
+          </fieldset>
+        </form>
       </div>
-      <form action="전송주소(#)" method="전송방식(get/post)" id="contact">
-        <fieldset>
-          <legend>isu E&amp;C contact us</legend>
-          <input type="text" id="name" name="name" placeholder="이름">
-          <input type="text" id="email" name="email" placeholder="이메일">
-          <input type="text" id="tel" name="tel" placeholder="연락처">
-          <input type="text" id="inquiry" name="inquiry" placeholder="문의내용">
-          <button>SEND</button>
-        </fieldset>
-      </form>
+      
+      <div id="n_main">
+        <table>
+          <caption>기업뉴스</caption>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성일</th>
+              <th>조회수</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">218</td>
+              <td>아산 탕정지구 오피스텔 수주</td>
+              <td>2020 . 01 . 09</td>
+              <td>134</td>
+            </tr>
+            <tr>
+              <td class="num">217</td>
+              <td>평택상공회의소 회관 신축공사 수주</td>
+              <td>2020 . 01 . 02</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td class="num">216</td>
+              <td>연초댐 안전성 강화사업 건설공사 수주</td>
+              <td>2019 . 12 . 27</td>
+              <td>163</td>
+            </tr>
+            <tr>
+              <td class="num">215</td>
+              <td>전주1산단 행복주택 건설공사 1공구 수주</td>
+              <td>2019 . 12 . 18</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td class="num">214</td>
+              <td>이수건설, 2019년 고객품질대상 우수상 수상</td>
+              <td>2019 . 12 . 03</td>
+              <td>123</td>
+            </tr>
+            <tr>
+              <td class="num">213</td>
+              <td>부천원종 LH참여형 가로주택정비사업</td>
+              <td>2019 . 11 . 22</td>
+              <td>215</td>
+            </tr>
+            <tr>
+              <td class="num">212</td>
+              <td>서울개포 상록아파트 전기공사 수주</td>
+              <td>2019 . 11 . 08</td>
+              <td>174</td>
+            </tr>
+            <tr>
+              <td class="num">211</td>
+              <td>경산무학 A6BL 민간참여 공공주택 수주</td>
+              <td>2019 . 11 . 08</td>
+              <td>219</td>
+            </tr>
+            <tr>
+              <td class="num">210</td>
+              <td>평택고덕 지식산업센터 신축공사 수주</td>
+              <td>2019 . 11 . 07</td>
+              <td>181</td>
+            </tr>
+            <tr>
+              <td class="num">209</td>
+              <td>청평댐 종합 보수보강 공사 시공평가 결과 알림</td>
+              <td>2019 . 10 . 29</td>
+              <td>138</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="n_list">
+          <ul class="clearfix">
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+          </ul>
+          <button class="n_left">&lang;</button>
+          <button class="n_right">&rang;</button>
+        </div>
+      </div>
     </div>
   </section>
   
